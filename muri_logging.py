@@ -2,6 +2,7 @@ import time
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
+import sys
 
 # format the log entries
 
@@ -21,8 +22,9 @@ def logger_generator(device_list, id, message):
             raise
 
 def log_obj(id):
-    daily_path,  hourly_path= build_dir(id)
-
+    daily_path,  hourly_path = build_dir(id)
+    print(daily_path)
+    print(hourly_path)
     formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
 
     handler_daily = TimedRotatingFileHandler(daily_path, 
@@ -41,20 +43,22 @@ def log_obj(id):
     logger.addHandler(handler_daily)
     logger.setLevel(logging.INFO)
 
-    print(logger)
+    logger.info('helllo!!')
     return logger
 
 def build_dir(id):
-    path_hourly = 'C:/Users/jose/Projects/muri/logs/{0}/hourly'.format(id)
-    path_daily = 'C:/Users/jose/Projects/muri/logs/{0}/daily'.format(id)
+    
+
+    path_hourly = '/home/jose/MQTT_MURI/logs/{0}/hourly/'.format(id)
+    path_daily = '/home/jose/MQTT_MURI/logs/{0}/daily/'.format(id)
+
     try:
+        
         os.makedirs(path_hourly, mode=0o777, exist_ok=True)
         os.makedirs(path_daily, mode=0o777, exist_ok=True)
     except OSError as e:
-        sys.exit("Can't create {dir}: {err}".format(dir=output_dir, err=e))
-    else:
-        pass
-    return path_daily, path_hourly
+        sys.exit("Can't create dir: {err}".format(err=e))
 
+    timestamp = time.strftime('%Y-%m-%d-%H:%M', time.localtime(time.time()))    
 
-log_obj('wdadw')
+    return path_daily + '{0}.log'.format(timestamp), path_hourly + '{0}.log'.format(timestamp)

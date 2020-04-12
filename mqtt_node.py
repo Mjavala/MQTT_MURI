@@ -15,7 +15,7 @@ class MQTT_SAMPLE_NODE():
     def on_message(self, client,  userdata, message):
         self.message_throttle += 1
         print(self.message_throttle)
-        if self.message_throttle == 3:
+        if self.message_throttle == 30:
             self.message_throttle = 0
             self.message_unpack(str(message.payload.decode()))
 
