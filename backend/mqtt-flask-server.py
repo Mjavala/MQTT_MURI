@@ -4,8 +4,11 @@ from flask_socketio import SocketIO
 from flask_bootstrap import Bootstrap
 import eventlet
 from flask_restful import Resource, Api
+import muri_logging
+import json
 
-
+ID = None
+id_set = set()
     
 eventlet.monkey_patch()
 
@@ -27,17 +30,21 @@ def handle_connect(client, userdata, flags, rc):
 
 @mqtt.on_message()
 def handle_mqtt_message(client, userdata, message):
-    data = dict(
-        topic=message.topic,
-        payload=message.payload.decode()
-    )
-    print(data)
+    payload = str(message.payload.decode())
+    message_unpack(payload)
 
 class HelloWorld(Resource):
     def get(self):
         return {'hello': 'world'}
 
 api.add_resource(HelloWorld, '/')
+
+def message_unpack(payload):
+    message = json.loads(payload)
+    ID = id_set
+    ID.add(message['ADDR_FROM'])
+
+    muri_logging.logger_generator(ID, message['ADDR_FROM'], payload)
 
 
 if __name__ == '__main__':
