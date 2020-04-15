@@ -3,6 +3,7 @@ import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
 import sys
+from pathlib import Path
 
 # format the log entries
 
@@ -20,11 +21,14 @@ def logger_generator(device_list, id, message):
             logger.info(message)
         elif id not in device_list:
             raise
+    # check for new files
+    print('here')
+    for path in Path('logs').rglob('*.log'):
+        print(path.name)
 
 def log_obj(id):
     daily_path,  hourly_path = build_dir(id)
-    print(daily_path)
-    print(hourly_path)
+
     formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
 
     handler_daily = TimedRotatingFileHandler(daily_path, 
