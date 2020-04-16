@@ -10,16 +10,21 @@ import muri_logging
 class MQTT_SAMPLE_NODE():
 
     def on_connect(self, client, userdata, flags, rc):
-            print("Connected to %s" % client)
+        self.connected = True
+        print("Connected to %s" % client)
 
     def on_message(self, client,  userdata, message):
         self.message_throttle += 1
-        print(self.message_throttle)
-        if self.message_throttle == 30:
+        if self.message_throttle == 10:
             self.message_throttle = 0
             self.message_unpack(str(message.payload.decode()))
 
-    def on_subscribe(self, client, userdata, mid, granted_qos):
+    def on_disconnect(client, userdata, rc):
+        if rc != 0:
+            self.connected = False
+            print("Unexpected disconnection.")
+    
+    def on_subscribe(client, userdata, mid, granted_qos):
         pass
 
     
@@ -27,7 +32,7 @@ class MQTT_SAMPLE_NODE():
         return self.mqttc.publish(channel, str(json.dumps(message_func)), qos = 2)
 
 
-    def connect(self):
+    def connect_test(self):
         self.heartbeat = True
 
         t = threading.Timer(30.0, self.connect)
@@ -38,12 +43,15 @@ class MQTT_SAMPLE_NODE():
         t.start()
 
     def message_unpack(self, payload):
-        message = json.loads(payload)
+        try:
+            message = json.loads(payload)
+        except:
+            print('Could not parse message')
+
         self.id = self.id_set
         self.id.add(message['ADDR_FROM'])
 
         muri_logging.logger_generator(self.id, message['ADDR_FROM'], payload)
-
 
     async def init_mqtt(self):
 
@@ -59,15 +67,19 @@ class MQTT_SAMPLE_NODE():
         self.mqttc.on_subscribe = self.on_subscribe
 
         print("Connecting to MQTT Server")
-        self.mqttc.connect(MQTT_HOST, MQTT_PORT)
+        try:
+            self.mqttc.connect(MQTT_HOST, MQTT_PORT)
+        except:
+            print('Could not connect')
 
         self.mqttc.loop_start()
 
         print("Subscribing to Topics")
         self.mqttc.subscribe('muri/#')
 
-        while True:
+        while (self.connected):
             pass
+
 
 
     def __init__(self): 
@@ -76,6 +88,7 @@ class MQTT_SAMPLE_NODE():
         self.id = None
         self.id_set = set()
         self.message_throttle = 0
+        self.connected = True
 
         self.timestamp = None
 
