@@ -7,7 +7,6 @@ from pathlib import Path
 
 # format the log entries
 
-
 def logger_generator(device_list, id, message):
     #if the device is streaming and there is no logger created
     for i in device_list:
@@ -21,10 +20,7 @@ def logger_generator(device_list, id, message):
             logger.info(message)
         elif id not in device_list:
             raise
-    # check for new files
-    print('here')
-    for path in Path('logs').rglob('*.log'):
-        print(path.name)
+
 
 def log_obj(id):
     daily_path,  hourly_path = build_dir(id)
@@ -51,13 +47,11 @@ def log_obj(id):
     return logger
 
 def build_dir(id):
-    
 
-    path_hourly = '/root/MQTT_MURI/backend/logs/{0}/hourly/'.format(id)
-    path_daily = '/root/MQTT_MURI/backend/logs/{0}/daily/'.format(id)
+    path_hourly = '/home/jose/MQTT_MURI/backend/logs/{0}/hourly/'.format(id)
+    path_daily = '/home/jose/MQTT_MURI/backend/logs/{0}/daily/'.format(id)
 
     try:
-        
         os.makedirs(path_hourly, mode=0o777, exist_ok=True)
         os.makedirs(path_daily, mode=0o777, exist_ok=True)
     except OSError as e:

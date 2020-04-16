@@ -29,6 +29,7 @@ def handle_connect(client, userdata, flags, rc):
 @mqtt.on_message()
 def handle_mqtt_message(client, userdata, message):
     payload = str(message.payload.decode())
+    print('message received')
     message_unpack(payload)
 
 def message_unpack(payload):
