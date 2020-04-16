@@ -3,7 +3,6 @@ from flask_mqtt import Mqtt
 from flask_socketio import SocketIO
 from flask_bootstrap import Bootstrap
 import eventlet
-from flask_restful import Resource, Api
 import muri_logging
 import json
 
@@ -21,7 +20,6 @@ app.config['MQTT_REFRESH_TIME'] = 1.0  # refresh time in seconds
 mqtt = Mqtt(app)
 socketio = SocketIO(app)
 bootstrap = Bootstrap(app)
-api = Api(app)
 
 @mqtt.on_connect()
 def handle_connect(client, userdata, flags, rc):
@@ -32,12 +30,6 @@ def handle_connect(client, userdata, flags, rc):
 def handle_mqtt_message(client, userdata, message):
     payload = str(message.payload.decode())
     message_unpack(payload)
-
-class HelloWorld(Resource):
-    def get(self):
-        return {'hello': 'world'}
-
-api.add_resource(HelloWorld, '/')
 
 def message_unpack(payload):
     message = json.loads(payload)
