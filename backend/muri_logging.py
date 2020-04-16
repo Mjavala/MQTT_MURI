@@ -3,10 +3,8 @@ import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
 import sys
-from pathlib import Path
 
 # format the log entries
-
 def logger_generator(device_list, id, message):
     #if the device is streaming and there is no logger created
     for i in device_list:
@@ -58,5 +56,5 @@ def build_dir(id):
         sys.exit("Can't create dir: {err}".format(err=e))
 
     timestamp = time.strftime('%Y-%m-%d-%H:%M', time.localtime(time.time()))    
-
+    print(path_hourly, path_daily)
     return path_daily + '{0}.log'.format(timestamp), path_hourly + '{0}.log'.format(timestamp)
