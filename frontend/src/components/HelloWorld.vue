@@ -4,7 +4,7 @@
       <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
     </v-btn>
     <Map v-bind:message="this.message" />
-    <Graphs />
+    <Graphs id="graph1" />
     <Graphs id="graph2"/>
     <Graphs id="graph3"/>
     <div id='conFeedWrap'>

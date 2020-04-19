@@ -1,18 +1,17 @@
 <template>
   <div class="map">
-     <l-map 
-          v-bind="mapConfig"
-        >
-        <l-tile-layer 
-            v-bind="mapRender"
-        />
-        <l-marker
-          :lat-lng="latLng(39, -106)"
-        >
-        <l-icon
-        v-bind="iconConfig"
-        >
-        </l-icon>
+    <l-map 
+      v-bind="mapConfig"
+    >
+    <l-tile-layer 
+      v-bind="mapRender"
+    />
+      <l-marker
+        :key="index"
+        v-bind:id="item"
+        v-for="(item, index) in this.listOfIds"
+      >
+        <l-icon v-bind="iconConfig" />
       </l-marker>
     </l-map>
   </div>
@@ -32,18 +31,24 @@ export default {
     LMarker,
     LIcon,
   },
-  props: ['message'],
+  props: {
+    idList: Array,
+    ID: String , 
+    lat: Number, 
+    lon: Number
+  },
   watch: {
     message(newVal){
       this.payload = newVal
-      this.check()
-    }
+      this.filter(newVal)
+    },
   },
   data() {
     return {
       payload: '',
-      lat: '',
-      lon: '',
+      markerlat: 0,
+      markerlon: 0,
+      listOfIds: this.idList,
       messageOBJ: {},
       mapConfig: {
         zoom: 7,
