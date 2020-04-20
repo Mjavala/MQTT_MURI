@@ -31,17 +31,13 @@ export default {
     LMarker,
     LIcon,
   },
-  props: {
-    idList: Array,
-    ID: String , 
-    lat: Number, 
-    lon: Number
-  },
+  props: [
+    'filteredMessageObj'
+  ],
   watch: {
-    message(newVal){
-      this.payload = newVal
-      this.filter(newVal)
-    },
+    filteredMessageObj(newVal){
+      console.log('hello' + newVal)
+    }
   },
   data() {
     return {
