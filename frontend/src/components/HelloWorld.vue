@@ -3,7 +3,7 @@
     <v-btn icon depressed rounded id="live" v-if=" this.status === 'Connected'">
       <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
     </v-btn>
-    <mapUI />
+    <idFilter v-bind:message="this.message"/>   
     <Graphs id="graph1" />
     <Graphs id="graph2"/>
     <Graphs id="graph3"/>
@@ -15,14 +15,12 @@
         Disconnect
       </v-btn>
       <Feed v-bind:message="this.message" />
-      <idFilter v-bind:message="this.message"/>
     </div>
   </div>
 </template>
 
 <script>
 import Feed from './feed'
-import mapUI from './map'
 import Graphs from './graphs'
 import idFilter from './filter'
 
@@ -42,7 +40,6 @@ export default{
   },
   components: {
     Feed,
-    mapUI,
     Graphs,
     idFilter
   },

@@ -1,23 +1,24 @@
 <template>
-    <Map v-bind="filteredMessageObj" />
+  <div>
+    <MapUI :masterSet="masterSet" />
+  </div>
+
 </template>
 
 <script>
 import L from 'leaflet';
+import MapUI from './map'
 export default {
   
   name: 'mapUI',
   props: ['message'],
+  components: {
+    MapUI
+  },
   watch: {
     message(newVal) {
       this.payload = newVal
       this.addIdAndFilterMessage(this.payload)
-    },
-    masterSet(newVal){
-      console.log(newVal)
-    },
-    filteredMessageObj(){
-      console.log('new message object created')
     }
   },
   data() {
@@ -45,9 +46,6 @@ export default {
     latLng(lat,long){
       return L.latLng(lat,long)
     },
-    arrayPush(messageLite){
-      this.masterSet.push(messageLite)
-    },
     filterMessage(sensors, message){
       if (sensors.lenght === 0){
         console.log('No devices detected...')
@@ -58,11 +56,10 @@ export default {
       if (sensors.length > 1){
         console.log('Mulitple devices detected...')
       }
-      if (sensors.length > Object.keys(this.masterSet).length){
+      if (sensors.length >= Object.keys(this.masterSet).length){
         for (let sensor of sensors) {
             if (message['ADDR_FROM'] === sensor){
               if (!(sensor in this.masterSet)){
-                console.log('hello world2')
                 this.latLngDataCleanup(message.frame_data['GPS Lat'], message.frame_data['GPS Lon'])
                 const lat = this.lat
                 const lon = this.lon
@@ -70,9 +67,8 @@ export default {
                   [sensor]: L.latLng(lat, lon)
                 }
                 this.masterSet.push(this.filteredMessageObj)
-                console.log('first mark succesfull')
-              }
-              break
+                break
+            }
           }
         }
       }

@@ -6,10 +6,10 @@
     <l-tile-layer 
       v-bind="mapRender"
     />
-      <l-marker
+      <l-marker 
         :key="index"
-        v-bind:id="item"
-        v-for="(item, index) in this.listOfIds"
+        v-for="(marker, index) in this.listOfIds"
+        :lat-lng="latLng(marker)"
       >
         <l-icon v-bind="iconConfig" />
       </l-marker>
@@ -32,19 +32,21 @@ export default {
     LIcon,
   },
   props: [
-    'filteredMessageObj'
+    'masterSet'
   ],
   watch: {
-    filteredMessageObj(newVal){
-      console.log('hello' + newVal)
+    masterSet(newVal){
+      this.listOfIds = newVal
+
+      for(let sensor of newVal){
+        console.log(sensor)
+      }
     }
   },
   data() {
     return {
-      payload: '',
-      markerlat: 0,
-      markerlon: 0,
-      listOfIds: this.idList,
+      marker: '',
+      listOfIds: [],
       messageOBJ: {},
       mapConfig: {
         zoom: 7,
@@ -73,10 +75,6 @@ export default {
     latLng(lat,long){
       return L.latLng(lat,long)
     },
-    check(){
-      this.messageOBJ = JSON.parse(this.payload)
-      console.log(this.messageOBJ.frame_data['GPS Lat'])
-    }
   }
 }
 </script>
