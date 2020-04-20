@@ -7,9 +7,9 @@
       v-bind="mapRender"
     />
       <l-marker 
-        :key="index"
-        v-for="(marker, index) in this.listOfIds"
-        :lat-lng="latLng(marker)"
+        :key="marker.id"
+        v-for="marker in markers"
+        :lat-lng="marker.latlng"
       >
         <l-icon v-bind="iconConfig" />
       </l-marker>
@@ -36,17 +36,38 @@ export default {
   ],
   watch: {
     masterSet(newVal){
-      this.listOfIds = newVal
+      let objKeys = []
+      let objKeysMap = []
+      console.log('new message set {{newVal}}')
+        
+      for (let sensor of newVal){
+          let objKey = Object.keys(sensor)
+          let objKeyMap = Object.keys(sensor).map((k) => sensor[k]);
+          
+          objKeys.push(objKey)
+          objKeysMap.push(objKeyMap)
 
-      for(let sensor of newVal){
-        console.log(sensor)
       }
+
+      //console.log(objKeys.values())
+      for (const value of objKeysMap.values()){
+        //console.log(value[0])
+        //console.log(value[0].lat, value[0].lng)
+        this.markers.push({
+          id: 'test',
+          latlng: L.latLng(value[0].lat, value[0].lng)})
+      }
+      //console.log(this.markers)
     }
   },
   data() {
     return {
       marker: '',
       listOfIds: [],
+      markers: [{
+        id: 1,
+        latlng: L.latLng(39, -105)
+      }],
       messageOBJ: {},
       mapConfig: {
         zoom: 7,
