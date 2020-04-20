@@ -38,7 +38,7 @@ export default {
     masterSet(newVal){
       let objKeys = []
       let objKeysMap = []
-      console.log('new message set {{newVal}}')
+      let markersArray = []
         
       for (let sensor of newVal){
           let objKey = Object.keys(sensor)
@@ -46,17 +46,16 @@ export default {
           
           objKeys.push(objKey)
           objKeysMap.push(objKeyMap)
-
       }
-
       //console.log(objKeys.values())
       for (const value of objKeysMap.values()){
         //console.log(value[0])
         //console.log(value[0].lat, value[0].lng)
-        this.markers.push({
+        markersArray.push({
           id: 'test',
           latlng: L.latLng(value[0].lat, value[0].lng)})
       }
+      this.markers = markersArray
       //console.log(this.markers)
     }
   },
