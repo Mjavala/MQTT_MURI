@@ -13,8 +13,8 @@ export default {
       this.payload = newVal
       this.addIdAndFilterMessage(this.payload)
     },
-    masterSet(){
-      console.log('set changed...')
+    masterSet(newVal){
+      console.log(newVal)
     },
     filteredMessageObj(){
       console.log('new message object created')
@@ -58,10 +58,8 @@ export default {
       if (sensors.length > 1){
         console.log('Mulitple devices detected...')
       }
-      console.log(sensors.length)
-      if (sensors.lenght > Object.keys(this.masterSet).length){
+      if (sensors.length > Object.keys(this.masterSet).length){
         for (let sensor of sensors) {
-          console.log(sensor)
             if (message['ADDR_FROM'] === sensor){
               if (!(sensor in this.masterSet)){
                 console.log('hello world2')
@@ -78,14 +76,21 @@ export default {
           }
         }
       }
-      if (sensors.lenght === Object.keys(this.masterSet).length){
-        console.log('lalallaa')
+      if (sensors.length == Object.keys(this.masterSet).length){
+          for (let sensor of sensors){
+            if (message['ADDR_FROM'] === sensor){
+              this.latLngDataCleanup(message.frame_data['GPS Lat'], message.frame_data['GPS Lon'])
+              const lat = this.lat
+              const lon = this.lon
+              this.masterSet[sensor] = L.latLng(lat, lon)
+              break
+            }
+          }
         //for (let sensor in sensors){
           //console.log('updating lat long...')
           //console.l
           //masterSet[sensor] = L.latLng(this.lat, this.lon)
       }
-      console.log('first message logged')
     },
     latLngDataCleanup(latitude, longitude){
       latitude = (latitude / 10000000).toFixed(1)
