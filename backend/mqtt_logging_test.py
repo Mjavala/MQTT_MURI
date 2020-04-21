@@ -176,7 +176,6 @@ class MQTT_SAMPLE_NODE():
             pass
 
 
-
     def __init__(self): 
         self.mqttc = mosquitto.Client()
         self.id = None
