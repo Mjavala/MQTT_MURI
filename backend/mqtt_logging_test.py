@@ -127,7 +127,7 @@ class MQTT_SAMPLE_NODE():
 
     def logging_test(self):
 
-        t = threading.Timer(1.0, self.logging_test)
+        t = threading.Timer(10.0, self.logging_test)
         t.daemon = True
 
         self.publish_message_wrap("muri/test", msg1)

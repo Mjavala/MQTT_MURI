@@ -5,8 +5,7 @@
     </v-btn>
     <idFilter v-bind:message="this.message"/>   
     <Graphs id="graph1" />
-    <Graphs id="graph2"/>
-    <Graphs id="graph3"/>
+    <Graphs id="graph2" />
     <div id='conFeedWrap'>
       <v-btn @click="connect">
         Connect
@@ -90,11 +89,12 @@ export default{
   #conFeedWrap{
     margin-top: 3% !important;
   }
-  #graph2{
-    top: 25vh;
+  #graph1{
+    padding: 0;
+    height: 50px;
   }
-  #graph3{
-    top: 49vh;
+  #graph2{
+    top: 40%;
   }
 
   #live{

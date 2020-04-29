@@ -47,10 +47,10 @@ export default {
       return L.latLng(lat,long)
     },
     filterMessage(sensors, message){
-      if (sensors.lenght === 0){
+      if (sensors.length === 0){
         console.log('No devices detected...')
       }
-      if (sensors.lenght <= 1){
+      if (sensors.length <= 1){
         console.log('Single device detected...')
       }
       if (sensors.length > 1){

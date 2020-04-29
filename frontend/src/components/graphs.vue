@@ -1,26 +1,37 @@
 <template>
-    <v-card
-        class= "graph1"
-    >
-        <v-card-text>
-        <div>Graphs</div>
-        </v-card-text>
-    </v-card>
+    <div class="wrapper">
+        <Plotly  class="graph" :data="data" :layout="layout" :display-mode-bar="false"></Plotly>
+    </div>
 </template>
 
 <script>
+import { Plotly } from 'vue-plotly'
+
 export default {
-    
+  components: {
+    Plotly
+  },
+  data () {
+    return {
+        data:[{
+        x: [1,2,3,4],
+        y: [10,15,13,17],
+        type:"scatter"
+    }],
+        layout: {
+            title: "altitude",
+            height: 400
+            }
+        }
+    }
 }
 </script>
 
 <style scoped>
-    .graph1{
+    .wrapper{
         display: inline-block;
-        padding: 1%;
         position: absolute;
-        top: 1%;
+        top: 0;
         width: 45vw;
-        height: 20vh;
     }
 </style>
