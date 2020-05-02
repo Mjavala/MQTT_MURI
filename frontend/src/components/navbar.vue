@@ -3,6 +3,7 @@
         app
         color="primary"
         dark
+        id="nav"
     >
         <v-spacer></v-spacer>
         <v-img max-height="100" max-width="225" src="../assets/iriss_logo.png" />
@@ -14,3 +15,10 @@ export default {
     
 }
 </script>
+
+<style scoped>
+    #nav{
+        position: fixed;
+        z-index: 1000;
+    }
+</style>

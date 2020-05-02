@@ -1,119 +1,86 @@
 <template>
-    <div class="wrapper">
-        <Plotly  class="graph" :data="data" :layout="layout" :display-mode-bar="false"></Plotly>
-    </div>
+  <div id="altitude-graph">
+        <rsssiReactivity :chart="chart" />
+  </div>
 </template>
 
 <script>
-import { Plotly } from 'vue-plotly'
+import rsssiReactivity from './RSSIReactivity'
 
 export default {
-    name: 'altitudeGraph',
-  components: {
-    Plotly
-  },
-  props: [
-      'idList',
-      'filteredAltitude'
-  ],
-  watch: {
-        filteredAltitude(newVal){
-            let objKey = Object.keys(newVal)
-            let objKeyMap = Object.keys(newVal).map((k) => newVal[k]);
-            this.altitude = objKeyMap[0] / 1000
-            this.sensorList.add(objKey)
-            this.sensor = objKey[0]
-            if (!(this.listOfDevices === undefined)){
-                this.updateTrace(this.sensor, this.listOfDevices)
-            }
-        },
-        idList(newVal, oldVal){
-            this.listOfDevices = newVal
-        
-            if (newVal.length > oldVal.length){
-                //a new device has been found, we need to now add a trace for altitude
-                console.log('a new device has been found, we need to now add a trace for altitude')
-                //this.addTrace()                
-            }
-            if (newVal.length < oldVal.length){
-                console.log(' a device has been lost, we need to alert the user & remove trace')
-                // a device has been lost, we need to alert the user & remove trace
-            }
-            if (newVal.length === oldVal.length){
-
-                for (let id of newVal){
-                    if (id === this.sensor){
-                        this.updateTrace(this.sensor, newVal)
-                    }
-                }
-                console.log(JSON.stringify((this.data[0].y)))
-            }
-        }
-  },
-  data () {
+    components: {
+        rsssiReactivity
+    },
+    props: [
+      'idList', 'filteredRSSI'
+    ],
+    watch: {
+      filteredRSSI(newVal){
+        //let objKey = Object.keys(newVal)
+        let objKeyMap = Object.keys(newVal).map((k) => newVal[k]);
+        let rssi = objKeyMap[0]
+        this.addData(rssi)
+      }
+    },
+    data() {
     return {
-        altitude: Number,
-        sensorList: new Set(),
-        sensor: '',
-        data:[{
-            x: [],
+      chart: {
+        uuid: "1233",
+        traces: [
+          {
             y: [],
-            mode:"lines",
+            x: [],
             type: 'scatter',
-            line: {color: '#DF56F1'}
-
-        }],
+            mode: 'lines+markers',
+            connectgaps: true
+          }
+        ],
         layout: {
-            yaxis: {
-                title: {
-                    text: 'Altitude',
-                },
-                rangemode: 'nonnegative'
-            },
-            xaxis: {
-                rangemode: 'nonnegative'
-            },
-            height: 450,
+          title: 'RSSI Graph',
+          xaxis: {
+            tickmode: 'auto',
+            gridcolor: '#bdbdbd',
+            gridwidth: 1,
+            title: 'time (s)',
+            titlefont: {
+              size: 16
             }
+          },
+          yaxis: {
+            title: 'RSSI',
+            titlefont: {
+              size: 16
+            },
+            gridwidth: 1,
+            gridcolor: '#bdbdbd',
+          }
         }
+      }
+    }
     },
     methods: {
-        addTrace(){
-            const time = new Date()
-            const trace = {
-                y: [this.altitude],
-                x: [time],
-                mode: 'lines',
-                type: 'line',
-                line: {color: '#DF58F1'}
-            }
-            this.data.push(trace)
-        },
-        addPoint (point) {
-            this.data[0].x.push(point['x']);
-            this.data[0].y.push(point['y']);
-        },
-        updateTrace(device, listOfDevices){
-            let self = this
-            const time = new Date()
-            self.data[0].y.push(this.altitude)
-            self.data[0].x.push([time])
-            for (const [sensor] of listOfDevices.entries()){
-                if (sensor === device){
-                    console.log('trace on...')
-                    //const index = i + 1
-                }
-            }
+      addData: function(rssi) {
+        this.chart.layout.datarevision = new Date().getTime();
+        this.chart.traces[0].y.push(rssi);
+        let time = new Date()
+        this.chart.traces[0].x.push(time);
+        if (this.chart.traces[0].x.length === 10){
+          this.chart.traces[0].x.shift()
+          this.chart.traces[0].y.shift()
         }
     }
+  }
 }
 </script>
 
 <style scoped>
-    .wrapper {
+    #altitude-graph{
         display: inline-block;
+        padding: 1%;
         position: absolute;
-        top: 0;
+        top: 35.5%;
         width: 45vw;
+        height: 20vh;
     }
+
 </style>

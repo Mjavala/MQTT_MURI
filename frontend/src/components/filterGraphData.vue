@@ -1,17 +1,20 @@
 <template>
   <div>
-    <testGraph :idList="idList" :filteredAltitude="filteredAltitude" />
+    <altitudeGraph :idList="idList" :filteredAltitude="filteredAltitude" />
+    <rssiGraph :idList="idList" :filteredRSSI="filteredRSSI" />
   </div>
 </template>
 
 <script>
-import testGraph from './testGraph'
+import altitudeGraph from './altitudeGraph'
+import rssiGraph from './RSSIGraph'
 
 export default {
 
   props: ['id', 'message'],
   components: {
-    testGraph
+    altitudeGraph,
+    rssiGraph
   },
   watch: {
     message(newVal) {
@@ -47,7 +50,7 @@ export default {
             }
 
         this.filteredRSSI = {
-            [id] : message['RSSI_RX']
+            [id] : message.data['RSSI_RX']
             }
         }
     }
