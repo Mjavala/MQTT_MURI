@@ -12,16 +12,11 @@ import HelloWorld from './components/HelloWorld'
 import NavBar from './components/navbar'
 
 export default {
-  name: 'App',
 
   components: {
     HelloWorld,
-    NavBar
-  },
-
-  data: () => ({
-    //
-  }),
+    NavBar,
+  }
 };
 </script>
 

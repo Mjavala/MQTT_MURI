@@ -3,9 +3,7 @@
     <v-btn icon depressed rounded id="live" v-if=" this.status === 'Connected'">
       <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
     </v-btn>
-    <idFilter v-bind:message="this.message"/>   
-    <Graphs id="graph1" />
-    <Graphs id="graph2" />
+    <filterID v-bind:message="this.message" />
     <div id='conFeedWrap'>
       <v-btn @click="connect">
         Connect
@@ -20,8 +18,8 @@
 
 <script>
 import Feed from './feed'
-import Graphs from './graphs'
-import idFilter from './filter'
+import filterID from './filterID'
+
 
 
 export default{
@@ -39,8 +37,7 @@ export default{
   },
   components: {
     Feed,
-    Graphs,
-    idFilter
+    filterID,
   },
   methods: {
     connect () {
@@ -59,7 +56,7 @@ export default{
         // Once a connection has been made, make a subscription and send a message.
         console.log("Connected");
         this.status = 'Connected'
-        this.client.subscribe("muri/#");
+        this.client.subscribe("muri/raw");
         console.log('subscribed')
     },
     onConnectionLost() {
@@ -87,7 +84,7 @@ export default{
     position: relative;
   }
   #conFeedWrap{
-    margin-top: 3% !important;
+    margin-top: 7% !important;
   }
   #graph1{
     padding: 0;
@@ -96,7 +93,6 @@ export default{
   #graph2{
     top: 40%;
   }
-
   #live{
     position: fixed;
     top: 1.5%;

@@ -24,7 +24,6 @@ import L from 'leaflet';
 import Pin from '../assets/pin.png'
 
 export default {
-  name: 'mapUI',
   components: { 
     LMap, 
     LTileLayer, 
@@ -46,8 +45,9 @@ export default {
           
           objKeys.push(objKey)
           objKeysMap.push(objKeyMap)
+          // check for unnecessary push
       }
-      //console.log(objKeys.values())
+      // change id to objkeys index
       for (const value of objKeysMap.values()){
         //console.log(value[0])
         //console.log(value[0].lat, value[0].lng)
@@ -56,6 +56,7 @@ export default {
           latlng: L.latLng(value[0].lat, value[0].lng)})
       }
       this.markers = markersArray
+      // check for unnecessary push
       //console.log(this.markers)
     }
   },

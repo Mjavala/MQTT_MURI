@@ -21,7 +21,7 @@ msg1 = {
         "interval index": 3,
         "GPS Lat": 391383881,
         "GPS Lon": -1071794161,
-        "GPS Alt": 1742301,
+        "GPS Alt": 154039,
         "GPS TOW": 443559600,
         "GPS fix type": 3,
         "GPS num sats": 18,
@@ -131,6 +131,7 @@ class MQTT_SAMPLE_NODE():
         t.daemon = True
 
         self.publish_message_wrap("muri/test", msg1)
+        time.sleep(10)
         self.publish_message_wrap("muri/test", msg2)
         
         t.start()
