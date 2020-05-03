@@ -15,41 +15,58 @@ export default {
     ],
     watch: {
       filteredAltitude(newVal){
-        //let objKey = Object.keys(newVal)
+        let objKey = Object.keys(newVal)
+        this.currentDevice = objKey[0]
         let objKeyMap = Object.keys(newVal).map((k) => newVal[k]);
         let altitude = objKeyMap[0] / 1000
-        this.addData(altitude)
+        this.altitude = altitude
+      },
+      idList(newVal, oldVal){
+        if (newVal.length === oldVal.length){
+          // current device message
+          this.findTrace(newVal)
+        }
+        if (newVal.length > oldVal.length){
+          // new device detected, add trace
+          this.addTrace()
+          this.findTrace(newVal)
+        }
       }
     },
     data() {
     return {
       altitude: Number,
+      currentDevice: '',
       chart: {
         uuid: "123",
         traces: [
           {
             y: [],
-            x: [],
+            x: [new Date()],
             type: 'scatter',
             mode: 'lines+markers',
             connectgaps: true
           }
         ],
         layout: {
-          title: 'Altitude vs Time Graph',
+          height: 325 ,
+          title: 'Altitude vs Time',
           xaxis: {
             tickmode: 'auto',
             gridcolor: '#bdbdbd',
             gridwidth: 1,
             title: 'time (s)',
             titlefont: {
-              size: 16
+              size: 11
+            },
+            tickfont:{
+              size: 10
             }
           },
           yaxis: {
             title: 'Altitude (m)',
             titlefont: {
-              size: 16
+              size: 11
             },
             gridwidth: 1,
             gridcolor: '#bdbdbd',
@@ -59,28 +76,42 @@ export default {
     }
     },
     methods: {
-      addData: function(altitude) {
+      addData (altitude, traceIndex) {
         this.chart.layout.datarevision = new Date().getTime();
-        this.chart.traces[0].y.push(altitude);
+        this.chart.traces[traceIndex].y.push(altitude);
         let time = new Date()
         this.chart.traces[0].x.push(time);
-        if (this.chart.traces[0].x.length === 10){
-          this.chart.traces[0].x.shift()
-          this.chart.traces[0].y.shift()
+        if (this.chart.traces[traceIndex].x.length === 10){
+          this.chart.traces[traceIndex].x.shift()
+          this.chart.traces[traceIndex].y.shift()
         }
+      },
+      findTrace (deviceList) {
+        for (const [i, id] of deviceList.entries()){
+          if (id === this.currentDevice){
+            this.addData(this.altitude, i)
+          }
+        }
+      },
+      addTrace () {
+        const traceObj = {
+            y: [],
+            x: [new Date()],
+            type: 'scatter',
+            mode: 'lines+markers',
+            connectgaps: true
+        }
+        this.chart.traces.push(traceObj)
+      },
     }
   }
-}
 </script>
 
 <style scoped>
     #altitude-graph{
         display: inline-block;
-        padding: 1%;
         position: absolute;
-        top: -3%;
-        width: 45vw;
-        height: 20vh;
+        top: -5%;
     }
 
 </style>

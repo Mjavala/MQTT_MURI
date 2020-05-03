@@ -34,9 +34,8 @@ export default {
   methods: {
     addIdAndFilterMessage(message){
         this.messageOBJ = JSON.parse(message)
-        this.listOfIds.add(this.messageOBJ['ADDR_FROM'])
+        this.listOfIds.add(this.messageOBJ.data['ADDR_FROM'])
         this.deviceList = Array.from(this.listOfIds)
-
         }
     }
 }

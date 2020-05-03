@@ -1,5 +1,5 @@
 <template>
-  <div id="altitude-graph">
+  <div id="rssi-graph">
         <rsssiReactivity :chart="chart" />
   </div>
 </template>
@@ -16,40 +16,58 @@ export default {
     ],
     watch: {
       filteredRSSI(newVal){
-        //let objKey = Object.keys(newVal)
+        let objKey = Object.keys(newVal)
+        this.currentDevice = objKey[0]
         let objKeyMap = Object.keys(newVal).map((k) => newVal[k]);
-        let rssi = objKeyMap[0]
-        this.addData(rssi)
+        this.rssi = objKeyMap[0]
+        this.addData(this.rssi)
+      },
+      idList(newVal, oldVal){
+        if (newVal.length === oldVal.length){
+          // current device message
+          this.findTrace(newVal)
+        }
+        if (newVal.length > oldVal.length){
+          // new device detected, add trace
+          this.addTrace()
+          this.findTrace(newVal)
+        }
       }
     },
     data() {
     return {
+      rssi: Number,
+      currentDevice: '',
       chart: {
         uuid: "1233",
         traces: [
           {
             y: [],
-            x: [],
+            x: [new Date()],
             type: 'scatter',
             mode: 'lines+markers',
             connectgaps: true
           }
         ],
         layout: {
-          title: 'RSSI Graph',
+          height: 325,
+          title: 'RSSI vs Time',
           xaxis: {
             tickmode: 'auto',
             gridcolor: '#bdbdbd',
             gridwidth: 1,
             title: 'time (s)',
             titlefont: {
-              size: 16
+              size: 11
+            },
+            tickfont:{
+              size: 10
             }
           },
           yaxis: {
             title: 'RSSI',
             titlefont: {
-              size: 16
+              size: 11
             },
             gridwidth: 1,
             gridcolor: '#bdbdbd',
@@ -59,28 +77,31 @@ export default {
     }
     },
     methods: {
-      addData: function(rssi) {
+      addData (rssi, traceIndex) {
         this.chart.layout.datarevision = new Date().getTime();
-        this.chart.traces[0].y.push(rssi);
+        this.chart.traces[traceIndex].y.push(rssi);
         let time = new Date()
         this.chart.traces[0].x.push(time);
-        if (this.chart.traces[0].x.length === 10){
-          this.chart.traces[0].x.shift()
-          this.chart.traces[0].y.shift()
+        if (this.chart.traces[traceIndex].x.length === 10){
+          this.chart.traces[traceIndex].x.shift()
+          this.chart.traces[traceIndex].y.shift()
         }
+      },
+      findTrace (deviceList) {
+        for (const [i, id] of deviceList.entries()){
+          if (id === this.currentDevice){
+            this.addData(this.rssi, i)
+          }
+        }
+      },
     }
   }
-}
 </script>
 
 <style scoped>
-    #altitude-graph{
+    #rssi-graph{
         display: inline-block;
-        padding: 1%;
         position: absolute;
-        top: 35.5%;
-        width: 45vw;
-        height: 20vh;
+        top: 41%;
     }
-
 </style>

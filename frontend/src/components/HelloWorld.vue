@@ -1,24 +1,26 @@
 <template>
   <div id="app">
-    <v-btn icon depressed rounded id="live" v-if=" this.status === 'Connected'">
-      <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
-    </v-btn>
-    <filterID v-bind:message="this.message" />
-    <div id='conFeedWrap'>
-      <v-btn @click="connect">
-        Connect
+    <div id="wrapper">
+      <v-btn icon depressed rounded id="live" v-if=" this.status === 'Connected'">
+        <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
       </v-btn>
-      <v-btn @click="disconnect">
-        Disconnect
-      </v-btn>
-      <Feed v-bind:message="this.message" />
+      <filterID v-bind:message="this.message" />
+      <div id='conFeedWrap'>
+        <v-btn @click="connect">
+          Connect
+        </v-btn>
+        <v-btn @click="disconnect">
+          Disconnect
+        </v-btn>
+      </div>
     </div>
+    <Feed v-bind:message="message" />
   </div>
 </template>
 
 <script>
-import Feed from './feed'
 import filterID from './filterID'
+import Feed from './feed'
 
 
 
@@ -36,8 +38,8 @@ export default{
     }
   },
   components: {
-    Feed,
     filterID,
+    Feed
   },
   methods: {
     connect () {
@@ -83,15 +85,12 @@ export default{
     margin-top: 20px;
     position: relative;
   }
+  #wrapper{
+    position: relative;
+    height: 105%;
+  }
   #conFeedWrap{
-    margin-top: 7% !important;
-  }
-  #graph1{
-    padding: 0;
-    height: 50px;
-  }
-  #graph2{
-    top: 40%;
+    margin-top: 3%;
   }
   #live{
     position: fixed;
