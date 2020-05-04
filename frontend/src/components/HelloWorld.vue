@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="wrapper">
-      <v-btn icon depressed rounded id="live" v-if=" this.status === 'Connected'">
+      <v-btn icon depressed rounded id="live" v-if="this.status">
         <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
       </v-btn>
       <filterID v-bind:message="this.message" />
@@ -29,7 +29,7 @@ export default{
     return {
       message: '',
       logs: [],
-      status: '',
+      status: false,
       clientID: "clientID-" + parseInt(Math.random() * 100),
       host: 'irisslive.net',
       port: 9001,
@@ -57,7 +57,7 @@ export default{
     onConnect(){
         // Once a connection has been made, make a subscription and send a message.
         console.log("Connected");
-        this.status = 'Connected'
+        this.status = true
         this.client.subscribe("muri/raw");
         console.log('subscribed')
     },
@@ -67,6 +67,7 @@ export default{
     },
     disconnect(){
       this.client.disconnect()
+      this.status = false
     },
     onMessageArrived(message) {
       this.message = message.payloadString
@@ -96,7 +97,7 @@ export default{
     position: fixed;
     top: 1.5%;
     left: 1.5%;
-    z-index: 10;
+    z-index: 1001;
     background: transparent;
   }
   #live-icon{
