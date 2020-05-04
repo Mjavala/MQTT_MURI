@@ -20,7 +20,6 @@ export default {
         this.currentDevice = objKey[0]
         let objKeyMap = Object.keys(newVal).map((k) => newVal[k]);
         this.rssi = objKeyMap[0]
-        this.addData(this.rssi)
       },
       idList(newVal, oldVal){
         if (newVal.length === oldVal.length){
@@ -32,26 +31,30 @@ export default {
           this.addTrace()
           this.findTrace(newVal)
         }
+        if (newVal.length < 1){
+          // first device
+          this.chart.traces[0].name = this.currentDevice
+        }
+        if (newVal.length === 1){
+          // first device
+          if (this.count === 0){
+            this.addTrace()
+          }
+        }
       }
     },
     data() {
     return {
       rssi: Number,
       currentDevice: '',
+      count: 0,
       chart: {
         uuid: "1233",
-        traces: [
-          {
-            y: [],
-            x: [new Date()],
-            type: 'scatter',
-            mode: 'lines+markers',
-            connectgaps: true
-          }
-        ],
+        traces: [],
         layout: {
           height: 325,
           title: 'RSSI vs Time',
+          showlegend: false,
           xaxis: {
             tickmode: 'auto',
             gridcolor: '#bdbdbd',
@@ -81,7 +84,7 @@ export default {
         this.chart.layout.datarevision = new Date().getTime();
         this.chart.traces[traceIndex].y.push(rssi);
         let time = new Date()
-        this.chart.traces[0].x.push(time);
+        this.chart.traces[traceIndex].x.push(time);
         if (this.chart.traces[traceIndex].x.length === 10){
           this.chart.traces[traceIndex].x.shift()
           this.chart.traces[traceIndex].y.shift()
@@ -93,6 +96,17 @@ export default {
             this.addData(this.rssi, i)
           }
         }
+      },
+      addTrace () {
+        const traceObj = {
+            y: [],
+            x: [new Date()],
+            type: 'scatter',
+            mode: 'lines+markers',
+            connectgaps: true,
+            name: this.currentDevice
+        }
+        this.chart.traces.push(traceObj)
       },
     }
   }

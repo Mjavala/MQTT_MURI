@@ -39,7 +39,6 @@ export default {
   methods: {
     filterMessage(message){
         this.messageOBJ = JSON.parse(message)
-        // console.log(this.messageOBJ)
         this.assignDataObjects(this.messageOBJ)
     },
     assignDataObjects(message){

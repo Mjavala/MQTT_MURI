@@ -31,23 +31,23 @@ export default {
           this.addTrace()
           this.findTrace(newVal)
         }
+        if (newVal.length === 1){
+          // first device
+          if (this.count === 0){
+            this.addTrace()
+          }
+        }
       }
     },
     data() {
     return {
       altitude: Number,
+      count: 0,
       currentDevice: '',
+      showlegend: false,
       chart: {
         uuid: "123",
-        traces: [
-          {
-            y: [],
-            x: [new Date()],
-            type: 'scatter',
-            mode: 'lines+markers',
-            connectgaps: true
-          }
-        ],
+        traces: [],
         layout: {
           height: 325 ,
           title: 'Altitude vs Time',
@@ -80,7 +80,7 @@ export default {
         this.chart.layout.datarevision = new Date().getTime();
         this.chart.traces[traceIndex].y.push(altitude);
         let time = new Date()
-        this.chart.traces[0].x.push(time);
+        this.chart.traces[traceIndex].x.push(time);
         if (this.chart.traces[traceIndex].x.length === 10){
           this.chart.traces[traceIndex].x.shift()
           this.chart.traces[traceIndex].y.shift()
@@ -99,11 +99,12 @@ export default {
             x: [new Date()],
             type: 'scatter',
             mode: 'lines+markers',
-            connectgaps: true
+            connectgaps: true,
+            name: this.currentDevice
         }
         this.chart.traces.push(traceObj)
-      },
-    }
+      }
+    } 
   }
 </script>
 

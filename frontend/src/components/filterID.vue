@@ -19,8 +19,8 @@ export default {
   },
   watch: {
     message(newVal) {
-        this.payload = newVal
-        this.addIdAndFilterMessage(newVal)
+      this.payload = newVal
+      this.addIdAndFilterMessage(newVal)
     }
   },
   data() {

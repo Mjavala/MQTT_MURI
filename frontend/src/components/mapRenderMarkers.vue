@@ -6,7 +6,7 @@
     <l-tile-layer 
       v-bind="mapRender"
     />
-      <l-marker 
+      <l-marker
         :key="marker.id"
         v-for="marker in markers"
         :lat-lng="marker.latlng"
@@ -31,44 +31,45 @@ export default {
     LIcon,
   },
   props: [
-    'masterSet'
+    'filteredMarker', 'idList'
   ],
   watch: {
-    masterSet(newVal){
-      let objKeys = []
-      let objKeysMap = []
-      let markersArray = []
-        
-      for (let sensor of newVal){
-          let objKey = Object.keys(sensor)
-          let objKeyMap = Object.keys(sensor).map((k) => sensor[k]);
-          
-          objKeys.push(objKey)
-          objKeysMap.push(objKeyMap)
-          // check for unnecessary push
+    filteredMarker(newVal){
+      let objKey = Object.keys(newVal)
+      this.currentDevice = objKey[0]
+      let objKeyMap = Object.keys(newVal).map((k) => newVal[k]);
+      this.currentPosition = objKeyMap[0]
+
+    },
+    idList(newVal, oldVal){
+      if (newVal.length === oldVal.length){
+        // loop through array and find the array index that matches the 'currentDevice'
+        // update the 'markers' array L.latlng field at the given index
+        this.matchDeviceId(newVal, this.currentDevice)
       }
-      // change id to objkeys index
-      for (const value of objKeysMap.values()){
-        //console.log(value[0])
-        //console.log(value[0].lat, value[0].lng)
-        markersArray.push({
-          id: 'test',
-          latlng: L.latLng(value[0].lat, value[0].lng)})
+      if (newVal.length > oldVal.length){
+        // new device detected, push the 'filteredMarkers' object into the 'markers' array
+        this.addMarkerToMarkerArray()
       }
-      this.markers = markersArray
-      // check for unnecessary push
-      //console.log(this.markers)
+      if (newVal.length === 1){
+        // first device, add the first marker
+        if (this.count === 0){
+          if (!this.currentPosition === undefined) {
+            this.addMarkerToMarkerArray()
+            this.count++
+          }
+        }
+      }
     }
   },
   data() {
     return {
-      marker: '',
-      listOfIds: [],
       markers: [{
         id: 1,
         latlng: L.latLng(39, -105)
       }],
-      messageOBJ: {},
+      currentDevice: '',
+      currentPosition: {},
       mapConfig: {
         zoom: 7,
         minZoom: 2,
@@ -96,6 +97,24 @@ export default {
     latLng(lat,long){
       return L.latLng(lat,long)
     },
+    matchDeviceId (deviceList, currentDevice) {
+      for (const [i, id] of deviceList.entries()) {
+        if (currentDevice === id) {
+          this.updateMarker(this.currentPosition, i)
+        }
+      }
+    },
+    updateMarker(currentPosition, markerIndex) {
+      this.markers[markerIndex] = currentPosition
+    },
+    addMarkerToMarkerArray() {
+      const markerObj = {
+        id: this.currentDevice,
+        latlng: L.latLng(this.currentPosition.lat, this.currentPosition.lng)
+      }
+  
+      this.markers.push(markerObj)
+    }
   }
 }
 </script>
