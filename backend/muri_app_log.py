@@ -4,27 +4,26 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 import sys
 
-# format the log entries
-
-
-def logger_generator(device_list, id, message):
+def device_logger(device_list, id, message):
     #if the device is streaming and there is no logger created
     for i in device_list:
         if id in device_list and id not in logging.root.manager.loggerDict:
             #create a logger
-            logger = log_obj(id)
+            logger = device_log_setup(id)
             logger.info(message)
         elif id in device_list and id in logging.root.manager.loggerDict:
             #logger exists
+            print('logger exists')
             logger = logging.getLogger(id)
+            print(message)
             logger.info(message)
         elif id not in device_list:
             raise
 
-def log_obj(id):
+def device_log_setup(id):
     daily_path,  hourly_path = build_dir(id)
+
     print(daily_path)
-    print(hourly_path)
     formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
 
     handler_daily = TimedRotatingFileHandler(daily_path, 
@@ -43,14 +42,12 @@ def log_obj(id):
     logger.addHandler(handler_daily)
     logger.setLevel(logging.INFO)
 
-    logger.info('helllo!!')
     return logger
 
 def build_dir(id):
     
-
-    path_hourly = '/home/jose/MQTT_MURI/logs/{0}/hourly/'.format(id)
-    path_daily = '/home/jose/MQTT_MURI/logs/{0}/daily/'.format(id)
+    path_hourly = 'logs/{0}/hourly/'.format(id)
+    path_daily = 'logs/{0}/daily/'.format(id)
 
     try:
         
@@ -59,6 +56,6 @@ def build_dir(id):
     except OSError as e:
         sys.exit("Can't create dir: {err}".format(err=e))
 
-    timestamp = time.strftime('%Y-%m-%d-%H:%M', time.localtime(time.time()))    
+    timestamp = time.strftime('%Y-%m-%d-%H', time.localtime(time.time()))    
 
     return path_daily + '{0}.log'.format(timestamp), path_hourly + '{0}.log'.format(timestamp)

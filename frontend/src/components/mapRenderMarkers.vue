@@ -125,7 +125,7 @@ export default {
   height: 70vh;
   width: 50vw;
   display: inherit;
-  padding: 1% 2% 2% 1%;
+  padding: 2% 2% 2% 1%;
 }
 .leaflet-container a.leaflet-popup-close-button{
   color: #121212;

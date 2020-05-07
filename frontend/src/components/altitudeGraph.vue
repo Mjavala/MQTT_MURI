@@ -112,7 +112,7 @@ export default {
     #altitude-graph{
         display: inline-block;
         position: absolute;
-        top: -5%;
+        top: 0%;
     }
 
 </style>

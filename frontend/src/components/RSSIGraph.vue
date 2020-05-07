@@ -116,6 +116,6 @@ export default {
     #rssi-graph{
         display: inline-block;
         position: absolute;
-        top: 41%;
+        top: 47.5%;
     }
 </style>

@@ -1,0 +1,12 @@
+[Unit]
+Description=dgrs python service
+
+[Service]
+WorkingDirectory=/home/debian/muri-mqtt
+ExecStart=/usr/bin/python3 ./dgrs_main.py -r1 /dev/ttyUSB0
+Restart=always
+StandardOutput=file:/home/debian/muri-mqtt/std.out
+StandardError=file:/home/debian/muri-mqtt/err.out
+
+[Install]
+WantedBy=multi-user.target
