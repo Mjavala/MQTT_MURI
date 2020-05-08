@@ -2,11 +2,11 @@
 Description=muri app python service
 
 [Service]
-WorkingDirectory=/home/MQTT_MURI
-ExecStart=/usr/bin/python3 /home/MQTT_MURI/backend/muri_app_main.py
+WorkingDirectory=/home/muri-mqtt
+ExecStart=/usr/bin/python3 ./muri_app_main.py
 Restart=always
-StandardOutput=file:/home/MQTT_MURI/std.out
-StandardError=file:/home/MQTT_MURI/err.out
+StandardOutput=file:/home/muri-mqtt/std.out
+StandardError=file:/home/muri-mqtt/err.out
 
 [Install]
 WantedBy=multi-user.target
