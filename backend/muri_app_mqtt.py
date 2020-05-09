@@ -49,7 +49,7 @@ class muri_app_mqtt():
             self.connected = False
 
     def on_mqtt_msg(self, client,  userdata, message):
-        print('---Message Received---')
+        #print('---Message Received---')
 
         self.message_unpack(str(message.payload.decode()))
 

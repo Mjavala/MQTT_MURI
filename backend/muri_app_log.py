@@ -1,4 +1,5 @@
 import time
+import datetime
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler
@@ -13,7 +14,6 @@ def device_logger(device_list, id, message):
             logger.info(message)
         elif id in device_list and id in logging.root.manager.loggerDict:
             #logger exists
-            print('logger exists')
             logger = logging.getLogger(id)
             logger.info(message)
         elif id not in device_list:
@@ -22,21 +22,20 @@ def device_logger(device_list, id, message):
 def device_log_setup(id):
     daily_path,  hourly_path = build_dir(id)
 
-    print(daily_path)
+
     formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s')
 
-    handler_daily = TimedRotatingFileHandler(daily_path, 
+    handler_daily = TimedRotatingFileHandler( daily_path + 'log', 
                                     when= 'D',
-                                    backupCount = 10 )
-    handler_hourly = TimedRotatingFileHandler(hourly_path, 
+                                    backupCount = 7 )
+    handler_hourly = TimedRotatingFileHandler( hourly_path + 'log', 
                                     when= 'H',
-                                    backupCount = 10 )    
+                                    backupCount = 24 )    
 
     handler_hourly.setFormatter(formatter)
     handler_daily.setFormatter(formatter)
 
     logger = logging.getLogger(id)
-
     logger.addHandler(handler_hourly)
     logger.addHandler(handler_daily)
     logger.setLevel(logging.INFO)
@@ -45,16 +44,15 @@ def device_log_setup(id):
 
 def build_dir(id):
     
-    path_hourly = '/home/muri-app/backend/logs/{0}/hourly'.format(id)
-    path_daily = '/home/muri-app/backend/logs/{0}/daily'.format(id)
+    path_hourly = 'C:/Users/jose/Projects/MQTT_MURI/backend/logs/{0}/hourly/'.format(id)
+    path_daily = 'C:/Users/jose/Projects/MQTT_MURI/backend/logs/{0}/daily/'.format(id)
 
     try:
-        
         os.makedirs(path_hourly, mode=0o777, exist_ok=True)
         os.makedirs(path_daily, mode=0o777, exist_ok=True)
+
     except OSError as e:
         sys.exit("Can't create dir: {err}".format(err=e))
+  
 
-    timestamp = time.strftime('%Y-%m-%d-%H', time.localtime(time.time()))    
-
-    return path_daily + '{0}.log'.format(timestamp), path_hourly + '{0}.log'.format(timestamp)
+    return path_daily, path_hourly
