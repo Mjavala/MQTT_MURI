@@ -46,8 +46,8 @@ export default {
             }
         },
     latLngDataCleanup(latitude, longitude){
-        const lat = (latitude / 10000000).toFixed(1)
-        const lon = (longitude / 10000000).toFixed(1)
+        const lat = (latitude / 10000000).toFixed(2)
+        const lon = (longitude / 10000000).toFixed(2)
         this.lat = lat
         this.lon = lon
         }

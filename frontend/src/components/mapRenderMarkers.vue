@@ -88,8 +88,7 @@ export default {
         'icon-size': [30,30],
       },
       mapRender: {
-        url:'https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png',
-        attribution:'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        url:'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
       },
     }
   },
@@ -112,7 +111,7 @@ export default {
         id: this.currentDevice,
         latlng: L.latLng(this.currentPosition.lat, this.currentPosition.lng)
       }
-  
+      console.log(this.currentPosition.lat, this.currentPosition.lng)
       this.markers.push(markerObj)
     }
   }

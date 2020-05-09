@@ -15,7 +15,6 @@ def device_logger(device_list, id, message):
             #logger exists
             print('logger exists')
             logger = logging.getLogger(id)
-            print(message)
             logger.info(message)
         elif id not in device_list:
             raise

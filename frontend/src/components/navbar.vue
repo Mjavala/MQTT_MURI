@@ -5,7 +5,7 @@
         dark
         id="nav"
     >
-        <v-img max-height="100" max-width="225" src="../assets/iriss_logo.png" />
+        <v-img id="iriss-logo" max-height="100" max-width="225" src="../assets/iriss_logo.png" />
     </v-app-bar>
 </template>
 
@@ -19,5 +19,8 @@ export default {
     #nav{
         position: fixed;
         z-index: 1000;
+    }
+    #iriss-logo{
+        margin-left: 5%;
     }
 </style>

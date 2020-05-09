@@ -85,7 +85,7 @@ export default {
         this.chart.traces[traceIndex].y.push(rssi);
         let time = new Date()
         this.chart.traces[traceIndex].x.push(time);
-        if (this.chart.traces[traceIndex].x.length === 10){
+        if (this.chart.traces[traceIndex].x.length === 360){
           this.chart.traces[traceIndex].x.shift()
           this.chart.traces[traceIndex].y.shift()
         }
