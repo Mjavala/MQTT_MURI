@@ -2,11 +2,11 @@
 Description=muri app python service
 
 [Service]
-WorkingDirectory=/home/muri-app
+WorkingDirectory=/home/muri-app/backend
 ExecStart=/usr/bin/python3 /home/muri-app/backend/muri_app_main.py
 Restart=always
-StandardOutput=file:/home/muri-app/std.out
-StandardError=file:/home/muri-app/err.out
+StandardOutput=file:/home/muri-app/backend/std.out
+StandardError=file:/home/muri-app/backend/err.out
 
 [Install]
 WantedBy=multi-user.target

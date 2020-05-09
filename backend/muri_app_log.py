@@ -45,8 +45,8 @@ def device_log_setup(id):
 
 def build_dir(id):
     
-    path_hourly = 'logs/{0}/hourly/'.format(id)
-    path_daily = 'logs/{0}/daily/'.format(id)
+    path_hourly = '/home/muri-app/backend/logs/{0}/hourly'.format(id)
+    path_daily = '/home/muri-app/backend/logs/{0}/daily'.format(id)
 
     try:
         
