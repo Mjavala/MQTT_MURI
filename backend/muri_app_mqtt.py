@@ -9,7 +9,6 @@ MQTT_PASS = "demo2020"
 MQTT_HOST = "irisslive.net"
 MQTT_PORT = 8883
 
-
 class muri_app_mqtt():
 
     def __init__(self): 
@@ -25,7 +24,10 @@ class muri_app_mqtt():
         self.id_set = set()
         self.last_stat_time = time.time()
         self.last_stats = {}
-        self.msg_cnt = 0
+        self.altitude = float
+        self.rssi = int
+        self.temp = float
+        self.humidity = float
 
     def on_mqtt_conn(self, client, userdata, flags, rc):
         if rc == 0:
@@ -49,19 +51,31 @@ class muri_app_mqtt():
             self.connected = False
 
     def on_mqtt_msg(self, client,  userdata, message):
-        #print('---Message Received---')
+        
+        payload = json.loads(str(message.payload.decode()))
 
-        self.message_unpack(str(message.payload.decode()))
+        # logger - raw data db
+        self.message_unpack(payload)
+
+        #distilled msg
+        self.db_data(payload)
+
+        #add stats
 
 
     def message_unpack(self, payload):
-        message = json.loads(payload)
-
-        self.id = message['data']['ADDR_FROM']
+        self.id = payload['data']['ADDR_FROM']
         self.id_set.add(self.id)
 
         muri_app_log.device_logger(self.id_set, self.id, payload)
-    
+
+    def db_data(self, payload):
+        self.altitude = payload['data']['frame_data']['gps_alt']
+        self.rssi = payload['data']['RSSI_RX']
+        self.temp =  payload['data']['frame_data']['RS41 Temp']
+        self.humidity = payload['data']['frame_data']['RS41 Hum']
+
+
     def isConnected(self): 
         return self.connected
 
@@ -71,14 +85,13 @@ class muri_app_mqtt():
 
         self.last_stats = {
             "last_update": time.time(), 
-            "period": stat_time, 
-            "mqtt_count": self.msg_cnt, 
             "device_id": self.id,
-            "device_list": self.id_set
+            "altitude": self.altitude,
+            "rssi": self.rssi,
+            "temperature": self.temp,
+            "humidity": self.humidity
             }
         
-        self.msg_cnt = 0
-
     def get_stats(self): 
         return self.last_stats
 
@@ -105,6 +118,7 @@ class muri_app_mqtt():
 
                 if (time.time() - last_time > 5): 
                     #self.logger.log_app("MQTT Status: Connnected: %s, qOut: %d qIn: %d" % (self.connected, self.qOut.qsize(), self.qIn.qsize()))
+                    self.stats()
                     last_time = time.time()
 
                 await asyncio.sleep(0.1)
@@ -113,10 +127,6 @@ class muri_app_mqtt():
             #logging.getLogger().log_app("Exception in MQTT: %s" % e)
         finally: 
             pass
-
-
-      
-
 
 
 if __name__ == "__main__":

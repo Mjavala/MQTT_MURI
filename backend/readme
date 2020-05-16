@@ -1,0 +1,8 @@
+CREATE TABLE conditions (
+  time        TIMESTAMPTZ NOT NULL,
+  id		  TEXT		  NOT NULL,
+  altitude    FLOAT       NOT NULL,
+  rssi		  INT		  NOT NULL,
+  temperature FLOAT       NOT NULL,
+  humidity    FLOAT       NOT NULL
+);
