@@ -2,7 +2,7 @@
 -   Historical data ui
 -   Security config
 -   Replication
--   Global log files
+-   System log files
 -   Raw database instance
 -   Data ingestion as a service
 -   Testing
