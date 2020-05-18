@@ -1,4 +1,4 @@
-CREATE TABLE conditions (
+CREATE TABLE muri_data (
   time        TIMESTAMPTZ NOT NULL,
   id		  TEXT		  NOT NULL,
   altitude    FLOAT       NOT NULL,

@@ -4,8 +4,9 @@ import time
 
 #TODO: need to set up pw / env variables
 USER = 'postgres'
+PW = 'postgrespassword'
 DATABASE = 'muri'
-HOST = "159.89.152.16"
+HOST = "64.227.104.52"
 
 class muri_db():
     def __init__(self):
@@ -20,7 +21,7 @@ class muri_db():
 
     async def run(self):
         try: 
-            conn = await asyncpg.connect(user=USER, database=DATABASE, host=HOST)
+            conn = await asyncpg.connect(user=USER, password=PW, database=DATABASE, host=HOST)
             await conn.execute(
                 '''
                     INSERT INTO muri_data VALUES (NOW(), $1, $2, $3, $4, $5)
@@ -36,7 +37,6 @@ class muri_db():
 
 
     def stat_update(self):
-        print(self.current_message)
         self.id = self.current_message['mqtt']['device_id']
         self.alt = self.current_message['mqtt']['altitude']
         self.rssi = self.current_message['mqtt']['rssi']
