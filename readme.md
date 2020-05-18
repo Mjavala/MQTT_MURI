@@ -43,7 +43,7 @@ linked to our timescaledb.
 # Database - DO droplet debian (v10.4)
 
 ## Backend UI 
-The current set up is for communication with the frontend via the [Hasura GraphQL interface](http://64.227.104.52:8080/console).
+The current set up is for communication with the frontend via the [Hasura GraphQL API](http://64.227.104.52:8080/console).
 
 It is password protected. For now, ask for the password through ryver.
 
