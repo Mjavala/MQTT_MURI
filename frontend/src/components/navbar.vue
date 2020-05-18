@@ -1,11 +1,10 @@
 <template>    
     <v-app-bar
         app
-        color="primary"
         dark
+        id="nav"
     >
-        <v-spacer></v-spacer>
-        <v-img max-height="100" max-width="225" src="../assets/iriss_logo.png" />
+        <v-img id="iriss-logo" max-height="100" max-width="225" src="../assets/iriss_logo.png" />
     </v-app-bar>
 </template>
 
@@ -14,3 +13,16 @@ export default {
     
 }
 </script>
+
+<style scoped>
+    #nav{
+        position: fixed;
+        z-index: 1000;
+        background: #667db6;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6) !important;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6) !important;
+    }
+    #iriss-logo{
+        margin-left: 5%;
+    }
+</style>

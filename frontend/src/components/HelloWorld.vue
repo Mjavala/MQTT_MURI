@@ -1,37 +1,35 @@
 <template>
   <div id="app">
-    <v-btn icon depressed rounded id="live" v-if=" this.status === 'Connected'">
-      <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
-    </v-btn>
-    <Map v-bind:message="this.message" />
-    <Graphs />
-    <Graphs id="graph2"/>
-    <Graphs id="graph3"/>
-    <div id='conFeedWrap'>
-      <v-btn @click="connect">
-        Connect
+    <div id="wrapper">
+      <v-btn icon depressed rounded id="live" v-if="this.status">
+        <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
       </v-btn>
-      <v-btn @click="disconnect">
-        Disconnect
-      </v-btn>
-      <Feed v-bind:message="this.message" />
+      <filterID v-bind:message="this.message" />
+      <div id='conFeedWrap'>
+        <v-btn @click="connect">
+          Connect
+        </v-btn>
+        <v-btn @click="disconnect">
+          Disconnect
+        </v-btn>
+      </div>
     </div>
+    <Feed v-bind:message="message" />
   </div>
 </template>
 
 <script>
+import filterID from './filterID'
 import Feed from './feed'
-import Map from './map'
-import Graphs from './graphs'
+
 
 
 export default{
-  el: '#app',
   data () {
     return {
       message: '',
       logs: [],
-      status: '',
+      status: false,
       clientID: "clientID-" + parseInt(Math.random() * 100),
       host: 'irisslive.net',
       port: 9001,
@@ -40,9 +38,8 @@ export default{
     }
   },
   components: {
-    Feed,
-    Map,
-    Graphs,
+    filterID,
+    Feed
   },
   methods: {
     connect () {
@@ -60,8 +57,8 @@ export default{
     onConnect(){
         // Once a connection has been made, make a subscription and send a message.
         console.log("Connected");
-        this.status = 'Connected'
-        this.client.subscribe("muri/#");
+        this.status = true
+        this.client.subscribe("muri/raw");
         console.log('subscribed')
     },
     onConnectionLost() {
@@ -70,6 +67,7 @@ export default{
     },
     disconnect(){
       this.client.disconnect()
+      this.status = false
     },
     onMessageArrived(message) {
       this.message = message.payloadString
@@ -88,21 +86,18 @@ export default{
     margin-top: 20px;
     position: relative;
   }
+  #wrapper{
+    position: relative;
+    height: 105%;
+  }
   #conFeedWrap{
-    margin-top: 3% !important;
+    margin-top: 3%;
   }
-  #graph2{
-    top: 25vh;
-  }
-  #graph3{
-    top: 49vh;
-  }
-
   #live{
     position: fixed;
     top: 1.5%;
     left: 1.5%;
-    z-index: 10;
+    z-index: 1001;
     background: transparent;
   }
   #live-icon{

@@ -5,12 +5,21 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
     "core-js": "^3.6.4",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
     "leaflet": "^1.6.0",
+    "plotly.js-dist": "^1.54.0",
     "vue": "^2.6.11",
+    "vue-apollo": "^3.0.3",
     "vue-router": "^3.1.6",
     "vue2-leaflet": "^2.5.2",
     "vuetify": "^2.2.11"

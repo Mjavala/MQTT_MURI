@@ -2,7 +2,7 @@ import paho.mqtt.client as mosquitto
 import json
 import time
 import asyncio
-import muri.backend.muri_app_log as logFactory
+import muri_app_log
 
 MQTT_USER = "muri"
 MQTT_PASS = "demo2020"
@@ -40,7 +40,7 @@ class muri_app_mqtt():
             print("!!! MQTT Connection Failed! !!!")
             #self.logger.log_app("!!! MQTT Connection Failed! !!!")
 
-    def on_mqtt_disc(self, client, userdata, rc): 
+    def on_mqtt_disc(client, userdata, rc): 
         print("!!! MQTT Disconnceted Unexpectedly !!!")
         self.connected = False
         if (rc != 0): 
@@ -67,7 +67,7 @@ class muri_app_mqtt():
         self.id = payload['data']['ADDR_FROM']
         self.id_set.add(self.id)
 
-        logFactory.device_logger(self.id_set, self.id, payload)
+        muri_app_log.device_logger(self.id_set, self.id, payload)
 
     def db_data(self, payload):
         self.altitude = payload['data']['frame_data']['gps_alt']
@@ -135,3 +135,4 @@ if __name__ == "__main__":
     loop = asyncio.get_event_loop()
 
     loop.run_until_complete(asyncio.ensure_future(mqtt_conn.main_loop()))
+
