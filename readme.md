@@ -22,7 +22,7 @@
 -   [Vue-Apollo](https://apollo.vuejs.org/)
 -   [GraphQL](https://graphql.org/)
 
-Note: If you want to understand graphQL queries the hasura playground (linked below) has a visual playground 
+Note: If you want to understand graphQL queries the hasura ui (linked below) has a visual playground 
 linked to our timescaledb.
 
 # Backend services
