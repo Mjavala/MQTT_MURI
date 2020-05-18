@@ -22,7 +22,7 @@
 -   [Vue-Apollo](https://apollo.vuejs.org/)
 -   [GraphQL](https://graphql.org/)
 
-Note: If you want to understand graphQL queries the hasura playground (described below) has a visual playground 
+Note: If you want to understand graphQL queries the hasura playground (linked below) has a visual playground 
 linked to our timescaledb.
 
 # Backend services
@@ -37,8 +37,8 @@ linked to our timescaledb.
 ## Data ingestion
 -   Currently a 1-1 connection between an instance of this service and a single database.
 
-### Resource
-[Asyncpg](https://github.com/MagicStack/asyncpg)
+### Resources
+-   [Asyncpg](https://github.com/MagicStack/asyncpg)
 
 # Database - DO droplet debian (v10.4)
 
