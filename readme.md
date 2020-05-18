@@ -1,17 +1,17 @@
 # TODO:
--   historical data ui
--   security config
--   replication
--   global log files
--   raw database instance
--   data ingestion as a service
+-   Historical data ui
+-   Security config
+-   Replication
+-   Global log files
+-   Raw database instance
+-   Data ingestion as a service
+-   Testing
 
 # Frontend
--   streaming interface located here - [Streaming UI](https://iriss-2j50vp3tc.now.sh/#/)
+-   Live data feed and visualization: [Streaming UI](https://iriss-2j50vp3tc.now.sh/#/)
 
 ## Stack
 -   Vue, Vuetify, Plotly, Vue-Leaflet, Vue-Apollo, GraphQL
--   dependencies located in ``frontend/package.json``
 
 ### Resources
 
@@ -35,7 +35,7 @@ linked to our timescaledb.
 -   Hourly logs rotate once a day
 
 ## Data ingestion
-Currently a 1-1 connection between an instance of this service and a single database.
+-   Currently a 1-1 connection between an instance of this service and a single database.
 
 ### Resource
 [Asyncpg](https://github.com/MagicStack/asyncpg)
@@ -43,8 +43,7 @@ Currently a 1-1 connection between an instance of this service and a single data
 # Database - DO droplet debian (v10.4)
 
 ## Backend UI 
-The current set up is for communication with the frontend via the **Hasura GraphQL** interface.
-located here - [API user interface](http://64.227.104.52:8080/console).
+The current set up is for communication with the frontend via the [Hasura GraphQL interface](http://64.227.104.52:8080/console).
 
 It is password protected. For now, ask for the password through ryver.
 
@@ -64,5 +63,5 @@ It is password protected. For now, ask for the password through ryver.
 
 
 ### Resources 
--   [timescale docs](http://64.227.104.52:8080/console)
--   [hasura docs](https://hasura.io/docs/1.0/graphql/manual/index.html)
+-   [timescale](http://64.227.104.52:8080/console)
+-   [hasura](https://hasura.io/docs/1.0/graphql/manual/index.html)
