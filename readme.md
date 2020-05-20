@@ -1,7 +1,7 @@
 # System Overview
 ![alt text](https://raw.githubusercontent.com/Mjavala/muri/master/arch.png)
 
-# TODO:
+# Todo:
 -   Historical data ui
 -   Security config
 -   Replication
