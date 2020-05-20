@@ -2,7 +2,7 @@
 -   Historical data ui
 -   Security config
 -   Replication
--   Global log files
+-   System log files
 -   Raw database instance
 -   Data ingestion as a service
 -   Testing
@@ -22,7 +22,7 @@
 -   [Vue-Apollo](https://apollo.vuejs.org/)
 -   [GraphQL](https://graphql.org/)
 
-Note: If you want to understand graphQL queries the hasura playground (linked below) has a visual playground 
+Note: If you want to understand graphQL queries the hasura ui (linked below) has a visual playground 
 linked to our timescaledb.
 
 # Backend services
@@ -43,7 +43,7 @@ linked to our timescaledb.
 # Database - DO droplet debian (v10.4)
 
 ## Backend UI 
-The current set up is for communication with the frontend via the [Hasura GraphQL interface](http://64.227.104.52:8080/console).
+The current set up is for communication with the frontend via the [Hasura GraphQL API](http://64.227.104.52:8080/console).
 
 It is password protected. For now, ask for the password through ryver.
 
