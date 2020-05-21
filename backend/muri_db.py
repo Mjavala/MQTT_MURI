@@ -1,12 +1,17 @@
 import asyncio
 import asyncpg
 import time
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
 
-#TODO: need to set up pw / env variables
-# USER = '!--config--!'
-# PW = '!--config--!'
-DATABASE = 'muri'
-HOST = "64.227.104.52"
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
+USER = os.getenv('DB_USER')
+PW = os.getenv('DB_PASSWORD')
+DATABASE = os.getenv('DB_NAME')
+HOST = os.getenv('DB_HOST')
 
 class muri_db():
     def __init__(self):

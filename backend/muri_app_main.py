@@ -1,14 +1,24 @@
 #!/usr/bin/python3
+
+# Muri App Main Program
+# Program Structure: 
+#   - muri_app_main (runs async, mult instances allowed)
+#   - muri_app_mqtt (runs async, sgl instance)
+#   - muri_db (sgl instance, single operation (R/W) connection to DB)
+#   - muri_app_log (sgl instance, needs to be configured for your directory structure)
+#   - Muri App Main Program (muri_app_main)
+#       - Async. Runs logging, MQTT and Database service. Watchdog. General Logging
+
 import asyncio
 import logging
 import logging.handlers as handlers
 import time
 import json
-from muri_app_mqtt import muri_app_mqtt as mqttc
-import muri_db
+from muri.backend.muri_app_mqtt import muri_app_mqtt as mqttc
+import muri.backend.muri_db as muri_db
 
 
-# Need to implement main logger from custom log module
+# TODO: General Logging
 STAT_INTERVAL = 5
 
 mqtt_conn = mqttc()
@@ -30,7 +40,7 @@ async def main_loop():
                 last_stat = time.time() 
                 stat_msg = {"mqtt": mqtt_conn.get_stats()}
 
-                # stat message goes to db node receiver
+                # stat msg to database
                 db.msg_in(stat_msg)
 
                 #logger.log_app(json.dumps(stat_msg))
@@ -38,11 +48,8 @@ async def main_loop():
 
 
     except Exception as e: 
-        print('error')
+        print(e)
         #logger.log_app("Main Loop Exception: %s" % e)
-
-    finally: 
-        pass
 
 
 

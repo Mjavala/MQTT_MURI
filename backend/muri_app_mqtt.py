@@ -3,11 +3,17 @@ import json
 import time
 import asyncio
 import muri.backend.muri_app_log as muri_app_log
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
 
-MQTT_USER = "muri"
-MQTT_PASS = "demo2020"
-MQTT_HOST = "irisslive.net"
-MQTT_PORT = 8883
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
+MQTT_USER = os.getenv('MQTT_USER')
+MQTT_PASS = os.getenv('MQTT_PASS')
+MQTT_HOST = os.getenv('MQTT_HOST')
+MQTT_PORT = os.getenv('MQTT_PORT')
 
 class muri_app_mqtt():
 
