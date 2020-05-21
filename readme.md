@@ -108,17 +108,6 @@ volumes:
   db_data:
 ```
 
-### Database architecture
-
--   timescaledb hypertable
--   schema
-
-| time | id | altitude | rssi | temperature | Humidity |
-|------|----|----------|------|-------------|----------|
-
--   indexed on ``(time DESC, id)``
-
-
 ### Resources 
 -   [timescale](http://64.227.104.52:8080/console)
 -   [hasura](https://hasura.io/docs/1.0/graphql/manual/index.html)
