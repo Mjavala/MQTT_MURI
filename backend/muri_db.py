@@ -3,8 +3,8 @@ import asyncpg
 import time
 
 #TODO: need to set up pw / env variables
-USER = 'postgres'
-PW = 'postgrespassword'
+# USER = '!--config--!'
+# PW = '!--config--!'
 DATABASE = 'muri'
 HOST = "64.227.104.52"
 

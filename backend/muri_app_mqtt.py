@@ -2,7 +2,7 @@ import paho.mqtt.client as mosquitto
 import json
 import time
 import asyncio
-import muri_app_log
+import muri.backend.muri_app_log as muri_app_log
 
 MQTT_USER = "muri"
 MQTT_PASS = "demo2020"
@@ -40,7 +40,7 @@ class muri_app_mqtt():
             print("!!! MQTT Connection Failed! !!!")
             #self.logger.log_app("!!! MQTT Connection Failed! !!!")
 
-    def on_mqtt_disc(client, userdata, rc): 
+    def on_mqtt_disc(self, client, userdata, rc): 
         print("!!! MQTT Disconnceted Unexpectedly !!!")
         self.connected = False
         if (rc != 0): 
