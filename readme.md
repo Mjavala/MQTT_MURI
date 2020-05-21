@@ -77,6 +77,36 @@ It is password protected. For now, ask for the password through ryver.
 ### Docker (v19)
 -   Hasura -  docker image: hasura/graphql-engine:v1.0.0-alpha20
 -   timescaledb - docker image: timescale/timescaledb:latest-pg12 | postgres (v12.2)
+-   Docker compose file example:
+```yaml
+version: '2'
+services:
+  timescale:
+    image: timescale/timescaledb:latest-pg12
+    restart: always
+    environment:
+      # POSTGRES_PASSWORD: '!--- config ---!'
+    ports:
+    - "5432:5432"
+    volumes:
+    - db_data:/var/lib/postgresql/data
+  graphql-engine:
+    image: hasura/graphql-engine:v1.0.0-alpha20
+    ports:
+    - "8080:8080"
+    depends_on:
+    - "timescale"
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgrespassword@timescale:5432/muri
+      # HASURA_GRAPHQL_ACCESS_KEY: '!--- set your access key ---!'
+    command:
+      - graphql-engine
+      - serve
+      - --enable-console
+volumes:
+  db_data:
+```
 
 ### Database architecture
 
