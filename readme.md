@@ -10,6 +10,16 @@
 -   Data ingestion as a service
 -   Testing
 
+# Proposed DB schema
+
+```SQL
+CREATE TABLE "currency_info"(
+   currency_code   VARCHAR (10),
+   currency        TEXT
+);
+
+```
+
 # Frontend
 -   Live data feed and visualization: [Streaming UI](https://iriss-2j50vp3tc.now.sh/#/)
 
