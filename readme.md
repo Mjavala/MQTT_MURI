@@ -12,10 +12,24 @@
 
 # Proposed DB schema
 
+###   2 relational tables - devices, stations - ||  One time-series hypertable -  device_data  -
 ```SQL
-CREATE TABLE "currency_info"(
-   currency_code   VARCHAR (10),
-   currency        TEXT
+CREATE TABLE "devices"(
+   device_id   VARCHAR (30),
+);
+
+CREATE TABLE "stations"(
+   station_id   VARCHAR (30),
+);
+
+CREATE TABLE "device_data"(
+   time            TIMESTAMP WITH TIME ZONE,
+   altitude        REAL,
+   rssi            SMALLINT,
+   temperature     REAL,
+   humidity        REAL,
+   device_id       VARCHAR (30),
+   station_id      VARCHAR (30)
 );
 
 ```
