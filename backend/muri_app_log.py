@@ -47,6 +47,7 @@ def device_log_setup(id):
 
 def build_dir(id):
     
+    # config to your directory structure
     path_hourly = '/home/muri-app/backend/logs/{0}/hourly/'.format(id)
     path_daily = '/home/muri-app/backend/logs/{0}/daily/'.format(id)
 
