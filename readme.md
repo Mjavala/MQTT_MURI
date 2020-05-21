@@ -98,7 +98,7 @@ services:
     - "timescale"
     restart: always
     environment:
-      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgrespassword@timescale:5432/muri
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:!--pw--!@timescale:5432/muri
       # HASURA_GRAPHQL_ACCESS_KEY: '!--- set your access key ---!'
     command:
       - graphql-engine
