@@ -1,5 +1,5 @@
 # System Overview
-![alt text](https://raw.githubusercontent.com/Mjavala/muri/master/arch.png)
+![alt text](https://raw.githubusercontent.com/Mjavala/muri/master/architecture_overview.png)
 
 # Todo:
 -   Historical data ui
