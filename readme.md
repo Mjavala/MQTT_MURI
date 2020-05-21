@@ -13,7 +13,7 @@
 
 # Proposed DB schema
 
-###   2 relational tables - devices, stations - ||  One time-series hypertable -  device_data  -
+###   2 relational tables - devices, stations - ||  One time-series hypertable -  device_data
 ```SQL
 CREATE TABLE "devices"(
    device_id   VARCHAR (30),
