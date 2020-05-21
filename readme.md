@@ -2,6 +2,7 @@
 ![alt text](https://raw.githubusercontent.com/Mjavala/muri/master/architecture_overview.png)
 
 # Todo:
+-   Doc - https://docs.google.com/document/d/1CSF3hZtkelVOZ4mjL_WDlLTLz2xcdvG2n6zTeEbTXk4/edit?usp=sharing
 -   Historical data ui
 -   Security config
 -   Replication
