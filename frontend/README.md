@@ -18,16 +18,7 @@
 -   [Vue Components](https://vuejs.org/v2/guide/components.html)
 
 ## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run dev
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+-   Clone repo
+-   Install dependancies ``npm install``
+-   Run locally ``npm run dev``
+-   Run linting service ``npm run lint``
