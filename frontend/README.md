@@ -14,6 +14,7 @@
 -   Plugins         - Plugins add global level functionality, in this case Vuetify.
 -   Router          - Configuration for routing multi-page apps.
 
+### Resources
 -   [Vue Config Docs](https://cli.vuejs.org/config/)
 -   [Vue Components](https://vuejs.org/v2/guide/components.html)
 
