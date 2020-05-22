@@ -2,6 +2,7 @@ import paho.mqtt.client as mosquitto
 import json
 import time
 import asyncio
+import logging
 import muri.backend.muri_app_log as muri_app_log
 import os
 from os.path import join, dirname
@@ -20,6 +21,7 @@ class muri_app_mqtt():
     def __init__(self): 
 
         self.connected = False
+        self.logger = logging.getLogger('app')
 
         self.mqttc = mosquitto.Client()
         self.mqttc.on_connect = self.on_mqtt_conn
@@ -40,34 +42,28 @@ class muri_app_mqtt():
             self.connected = True
             self.mqttc.subscribe('muri/raw')
             print("--- MQTT Connected! ---")
-            #self.logger.log_app("--- MQTT Connected! ---")
+            self.logger.log_app("--- MQTT Connected! ---")
         else: 
             self.connected = False
             print("!!! MQTT Connection Failed! !!!")
-            #self.logger.log_app("!!! MQTT Connection Failed! !!!")
+            self.logger.log_app("!!! MQTT Connection Failed! !!!")
 
     def on_mqtt_disc(self, client, userdata, rc): 
-        print("!!! MQTT Disconnceted Unexpectedly !!!")
         self.connected = False
         if (rc != 0): 
             print("!!! MQTT Disconnceted Unexpectedly !!!")
-            #self.logger.log_app("!!! MQTT Disconnceted Unexpectedly !!!")
+            self.logger.log_app("!!! MQTT Disconnceted Unexpectedly !!!")
         else: 
-            #self.logger.log_app("!!! MQTT Disconnceted Planned !!!")
+            self.logger.log_app("!!! MQTT Disconnceted Planned !!!")
             self.connected = False
 
     def on_mqtt_msg(self, client,  userdata, message):
         
         payload = json.loads(str(message.payload.decode()))
 
-        # logger - raw data db
         self.message_unpack(payload)
 
-        #distilled msg
         self.db_data(payload)
-
-        #add stats
-
 
     def message_unpack(self, payload):
         self.id = payload['data']['ADDR_FROM']
@@ -107,14 +103,13 @@ class muri_app_mqtt():
         try:
             self.mqttc.username_pw_set(MQTT_USER, MQTT_PASS)
 
-            #self.logger.log_app("Connecting to MQTT Server....")
+            self.logger.log_app("Connecting to MQTT Server....")
             self.mqttc.connect_async(MQTT_HOST, MQTT_PORT, keepalive=15)
             self.mqttc.loop_start()
-            #self.logger.log_app("Done!")
 
         except Exception as e: 
             print(e)
-            #logging.getLogger().log_app("Exception in MQTT Start Script: %s" % e)
+            self.logger.log_app.log_app("Exception in MQTT Start Script: %s" % e)
 
     async def main_loop(self):
         last_time = time.time()
@@ -123,14 +118,12 @@ class muri_app_mqtt():
             while(True):
 
                 if (time.time() - last_time > 5): 
-                    #self.logger.log_app("MQTT Status: Connnected: %s, qOut: %d qIn: %d" % (self.connected, self.qOut.qsize(), self.qIn.qsize()))
                     self.stats()
                     last_time = time.time()
 
                 await asyncio.sleep(0.1)
         except Exception as e:
-            print("Exception in MQTT: %s" % e) 
-            #logging.getLogger().log_app("Exception in MQTT: %s" % e)
+            self.logger.log_app.log_app("Exception in MQTT: %s" % e)
         finally: 
             pass
 

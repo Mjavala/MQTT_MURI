@@ -16,9 +16,8 @@ import time
 import json
 from muri.backend.muri_app_mqtt import muri_app_mqtt as mqttc
 import muri.backend.muri_db as muri_db
+import muri.backend.muri_app_log as muri_app_log
 
-
-# TODO: General Logging
 STAT_INTERVAL = 5
 
 mqtt_conn = mqttc()
@@ -27,39 +26,37 @@ db = muri_db.muri_db()
 async def main_loop(): 
 
     last_stat = time.time()
-    #logger = logging.getLogger()
+    logger = logging.getLogger('app')
 
     try: 
 
         while (True):
            
-            #if (mqtt_conn.isConnected() == True): 
-                #log connection alive + stats
+            if (mqtt_conn.isConnected() == True): 
 
-            if (time.time() - last_stat > STAT_INTERVAL): 
-                last_stat = time.time() 
-                stat_msg = {"mqtt": mqtt_conn.get_stats()}
+                if (time.time() - last_stat > STAT_INTERVAL): 
+                    last_stat = time.time() 
+                    stat_msg = {"mqtt": mqtt_conn.get_stats()}
 
-                # stat msg to database
-                db.msg_in(stat_msg)
+                    # stat msg to database
+                    db.msg_in(stat_msg)
 
-                #logger.log_app(json.dumps(stat_msg))
-            await asyncio.sleep(0.01)
+                    logger.log_app(json.dumps(stat_msg))
+                await asyncio.sleep(0.01)
 
 
     except Exception as e: 
         print(e)
-        #logger.log_app("Main Loop Exception: %s" % e)
+        logger.log_app("Main Loop Exception: %s" % e)
 
 
 
 if __name__ == '__main__':
-    #logger = logging.getLogger()
+    muri_app_log.main_app_logs()
+    logger = logging.getLogger('app')
 
 
-    #logger.log_app("Starting DGRS Main Program")
-
-    #logger.log_app("Receiver 1 Comm Port Requested: {0}".format(args.rcvr_1_port))
+    logger.log_app("Starting MURI App Main Program")
 
     loop = asyncio.get_event_loop()
 
