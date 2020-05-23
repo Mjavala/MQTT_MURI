@@ -213,6 +213,14 @@ volumes:
   db_data:
 ```
 
+note: database muri must be created in the postgres/timescale image before hasura is able to connect.
+
+### Useful Docker commands
+-  docker exec -it [img-id] psql -U postgres (connect to postgres)
+-  docker-compose start/stop
+-  docker inspect [obj]
+
+
 ### Resources 
 -   [timescale](http://64.227.104.52:8080/console)
 -   [hasura](https://hasura.io/docs/1.0/graphql/manual/index.html)
