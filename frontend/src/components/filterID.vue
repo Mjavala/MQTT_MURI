@@ -1,5 +1,7 @@
 <template>
+  <!-- generates a master list of live devices -->
   <div>
+      <!-- Map & Graph data processing abstracted into child components -->
       <filterMapData :id='deviceList' :message='payload' />
       <filterGraphData :id='deviceList' :message='payload' />
   </div>
@@ -17,6 +19,7 @@ export default {
     filterMapData,
     filterGraphData
   },
+  // --- watch - https://vuejs.org/v2/guide/computed.html --- //
   watch: {
     message(newVal) {
       this.payload = newVal
@@ -28,7 +31,7 @@ export default {
         payload: [],
         messageOBJ: [],
         deviceList: [],
-        listOfIds: new Set(), //Set() -  list of unique items
+        listOfIds: new Set(), // --- Set() -  list of unique items --- //
     }
   },
   methods: {

@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <div id="wrapper">
+      <!-- Vuetify buttons - https://vuetifyjs.com/en/components/buttons/ -->
       <v-btn icon depressed rounded id="live" v-if="this.status">
         <v-icon id="live-icon" color="#76FF03">mdi-wifi</v-icon>
       </v-btn>
+      <!-- props - https://vuejs.org/v2/guide/components-props.html -->
+      <!-- sends message obj to the filter ID component for processing a list of global device IDs -->
       <filterID v-bind:message="this.message" />
       <div id='conFeedWrap'>
         <v-btn @click="connect">
@@ -14,27 +17,28 @@
         </v-btn>
       </div>
     </div>
+    <!-- General data feed component -->
     <Feed v-bind:message="message" />
   </div>
 </template>
 
 <script>
+// --- Main wrapper for the MQTT message feed --- //
 import filterID from './filterID'
 import Feed from './feed'
-
-
 
 export default{
   data () {
     return {
+      // --- Vue data object - https://vuejs.org/v2/guide/instance.html --- //
       message: '',
       logs: [],
       status: false,
       clientID: "clientID-" + parseInt(Math.random() * 100),
-      host: 'irisslive.net',
+      host: process.env.MQTT_HOST,
       port: 9001,
-      username: 'muri',
-      password: 'demo2020'
+      username: process.env.MQTT_USER,
+      password: process.env.MQTT_PASSWORD
     }
   },
   components: {
@@ -42,6 +46,7 @@ export default{
     Feed
   },
   methods: {
+    // --- Regular MQTT callback functions --- //
     connect () {
       this.client = new window.Paho.MQTT.Client(this.host, this.port, this.clientID);
       this.client.connect({      
@@ -56,13 +61,10 @@ export default{
     },
     onConnect(){
         // Once a connection has been made, make a subscription and send a message.
-        console.log("Connected");
         this.status = true
         this.client.subscribe("muri/raw");
-        console.log('subscribed')
     },
     onConnectionLost() {
-      console.log('disconnected')
       this.status = 'disconnected'
     },
     disconnect(){
@@ -70,6 +72,7 @@ export default{
       this.status = false
     },
     onMessageArrived(message) {
+      // --- Assign MQTT raw message to message variable, used as a prop for child components --- //
       this.message = message.payloadString
     },
   }

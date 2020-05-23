@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Rendering abstracted to its own component --->
     <MapRender :idList="idList" :filteredMarker="filteredMarker" />
   </div>
 </template>
@@ -9,6 +10,7 @@ import L from 'leaflet';
 import MapRender from './mapRenderMarkers'
 
 export default {
+  // --- the FilterID props passed down --- //
   props: ['id', 'message'],
   components: {
     MapRender
@@ -41,10 +43,12 @@ export default {
     assignDataObjects(message){
         const id = message.data['ADDR_FROM']
         this.latLngDataCleanup(message.data.frame_data['gps_lat'], message.data.frame_data['gps_lon'])
+        // --- filteredMarker OBJ translates directly to a marker using Leaflet --- //
         this.filteredMarker = {
             [id] : L.latLng(this.lat, this.lon)
             }
         },
+    // --- Data comes in at a factor of 1e7 --- //
     latLngDataCleanup(latitude, longitude){
         const lat = (latitude / 10000000).toFixed(2)
         const lon = (longitude / 10000000).toFixed(2)

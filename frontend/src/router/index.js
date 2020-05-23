@@ -12,8 +12,9 @@ Vue.use(VueRouter)
   },
   {
     path: '/muri/historical',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../components/historical.vue')
+    name: 'historical',
+    // --- Async components - https://vuejs.org/v2/guide/components-dynamic-async.html --- //
+    component: () => import('../components/historicalPage.vue')
   }
 ]
 

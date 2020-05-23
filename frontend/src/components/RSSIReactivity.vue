@@ -1,4 +1,5 @@
 <template>
+    <!--reference to rssiGraph DOM ID https://vuejs.org/v2/api/#vm-refs -->
     <div :ref="chart.uuid"></div>
 </template>
 <script>
@@ -11,6 +12,7 @@ export default {
   watch: {
     chart: {
       handler: function() {
+        // --- handles updating the chart with new traces, layout, etc - https://plotly.com/javascript/react/ --- //
         Plotly.react(
           this.$refs[this.chart.uuid],
           this.chart.traces,

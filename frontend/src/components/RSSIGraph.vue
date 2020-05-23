@@ -1,5 +1,6 @@
 <template>
   <div id="rssi-graph">
+        <!-- chart object is passed to Reactivity component, which deals with rendering updates -->
         <rsssiReactivity :chart="chart" />
   </div>
 </template>
@@ -48,7 +49,8 @@ export default {
       rssi: Number,
       currentDevice: '',
       count: 0,
-      chart: {
+      // --- plotly chart config - https://plotly.com/javascript/configuration-options/ --- //
+      chart: {      
         uuid: "1233",
         traces: [],
         layout: {
@@ -81,6 +83,7 @@ export default {
     },
     methods: {
       addData (rssi, traceIndex) {
+        // --- will only update if datarevision is updated --- //
         this.chart.layout.datarevision = new Date().getTime();
         this.chart.traces[traceIndex].y.push(rssi);
         let time = new Date()

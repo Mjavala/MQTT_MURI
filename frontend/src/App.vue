@@ -1,4 +1,5 @@
 <template>
+    <!-- https://router.vuejs.org/api/#router-view -->
     <router-view></router-view>
 </template>
 

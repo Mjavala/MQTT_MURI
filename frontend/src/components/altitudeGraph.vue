@@ -1,5 +1,6 @@
 <template>
   <div id="altitude-graph">
+        <!-- chart object is passed to Reactivity component, which deals with rendering updates -->
         <altitudeReactivity :chart="chart" />
   </div>
 </template>
@@ -23,16 +24,16 @@ export default {
       },
       idList(newVal, oldVal){
         if (newVal.length === oldVal.length){
-          // current device message
+          // --- current device message --- //
           this.findTrace(newVal)
         }
         if (newVal.length > oldVal.length){
-          // new device detected, add trace
+          // --- new device detected, add trace --- //
           this.addTrace()
           this.findTrace(newVal)
         }
         if (newVal.length === 1){
-          // first device
+          // --- first device --- //
           if (this.count === 0){
             this.addTrace()
           }
@@ -45,6 +46,7 @@ export default {
       count: 0,
       currentDevice: '',
       showlegend: false,
+      // --- plotly chart config - https://plotly.com/javascript/configuration-options/ --- //
       chart: {
         uuid: "123",
         traces: [],
@@ -77,6 +79,7 @@ export default {
     },
     methods: {
       addData (altitude, traceIndex) {
+        // --- will only update if datarevision is updated --- //
         this.chart.layout.datarevision = new Date().getTime();
         this.chart.traces[traceIndex].y.push(altitude);
         let time = new Date()

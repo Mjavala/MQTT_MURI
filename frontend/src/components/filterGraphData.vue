@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Rendering abstracted to its own component --->
     <altitudeGraph :idList="idList" :filteredAltitude="filteredAltitude" />
     <rssiGraph :idList="idList" :filteredRSSI="filteredRSSI" />
   </div>

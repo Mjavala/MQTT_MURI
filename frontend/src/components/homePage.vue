@@ -1,22 +1,23 @@
 <template>
+    <!-- Home page component, brings in the MQTT receiver, loader, and navbar components -->
     <div>
         <Loader v-if="show"></loader>
         <NavBar/>
         <v-content>
-        <HelloWorld/>
+        <Receiver />
         </v-content>
     </div>
 </template>
 
 <script>
-import HelloWorld from './HelloWorld'
+import Receiver from './mqttReceiver'
 import NavBar from './navbar'
 import Loader from './loader'
 
 export default {
 
   components: {
-    HelloWorld,
+    Receiver,
     NavBar,
     Loader
   },

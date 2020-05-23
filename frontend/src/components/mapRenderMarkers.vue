@@ -1,11 +1,14 @@
 <template>
+  <!--  Vue Leaflet - https://github.com/vue-leaflet/Vue2Leaflet -->
   <div class="map">
-    <l-map 
+    <!-- v-bind - https://vuejs.org/v2/guide/class-and-style.html -->
+    <l-map
       v-bind="mapConfig"
     >
     <l-tile-layer 
       v-bind="mapRender"
     />
+    <!-- v-for - https://vuejs.org/v2/guide/list.html -->
       <l-marker
         :key="marker.id"
         v-for="marker in markers"
@@ -35,6 +38,7 @@ export default {
   ],
   watch: {
     filteredMarker(newVal){
+      // --- unpack prop passed down from filterMapData --- //
       let objKey = Object.keys(newVal)
       this.currentDevice = objKey[0]
       let objKeyMap = Object.keys(newVal).map((k) => newVal[k]);
@@ -111,14 +115,12 @@ export default {
         id: this.currentDevice,
         latlng: L.latLng(this.currentPosition.lat, this.currentPosition.lng)
       }
-      console.log(this.currentPosition.lat, this.currentPosition.lng)
       this.markers.push(markerObj)
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .map{
   height: 70vh;

@@ -18,7 +18,7 @@ const getHeaders = () => {
 
      headers = {
      'content-type': `application/json`,
-     'x-hasura-access-key': 'mylongsecretkey'
+     'x-hasura-access-key': process.env.HASURA_KEY
      }
    console.log(headers)
 
