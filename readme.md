@@ -135,7 +135,7 @@ CREATE TABLE "0xC109_raw"(
    hw_meas_vr1    SMALLINT,
    hw_meas_vr2    SMALLINT,
    hw_meas_vo1    SMALLINT,
-   hw_meas_vo2    SMALLINT,
+   hw_meas_vo2    SMALLINT
 );
 ```
 
