@@ -35,6 +35,110 @@ CREATE TABLE "device_data"(
 
 ```
 
+### Raw DB schemas
+
+```SQL
+CREATE TABLE "0xd2a8_raw"(
+   station        VARCHAR (20),
+   receiver       VARCHAR (10),
+   msg_time       DOUBLE PRECISION,
+   addr_from      VARCHAR (30),
+   altitude       REAL,
+   rssi_rx        SMALLINT,
+   frame_type     VARCHAR (10),
+   frame_cnt      SMALLINT,
+   frame          TEXT,
+   packet_id      INTEGER,
+   packet_num     INTEGER,
+   epoch_index    INTEGER,
+   gps_lat        REAL,
+   gps_lon        REAL,
+   gps_alt        REAL,
+   gps_tow        INTEGER,
+   gps_fix        SMALLINT,
+   gps_numsats    SMALLINT,
+   batt_mon       SMALLINT,
+   gondola_statu  SMALLINT,
+   RS41_temp      REAL,
+   RS41_hum       REAL,
+   RS41_pres      REAL,
+   temp_ta1       INTEGER,
+   temp_ti1       INTEGER,
+   temp_ta2       INTEGER,
+   temp_ti2       INTEGER,
+   cw_chop_vr1    INTEGER,
+   cw_chop_vr2    INTEGER,
+   cw_chop_vo1    INTEGER,
+   cw_chop_vo2    INTEGER,
+   cw_chop_cpot   INTEGER,
+   cw_chop_gpot   SMALLINT,
+   gps_veln       SMALLINT,
+   gps_vele       SMALLINT,
+   gps_vel_d      SMALLINT,
+   hw_chop_vr1    SMALLINT,
+   hw_chop_vr2    SMALLINT,
+   hw_chop_vo1    SMALLINT,
+   hw_chop_vo2    SMALLINT,
+   hw_chop_cpot   SMALLINT,
+   hw_chop_gpot   SMALLINT,
+   rms_hor_vel    SMALLINT,
+   rms_ver_vel    SMALLINT,
+   var_35         SMALLINT
+);
+```
+
+```SQL
+CREATE TABLE "0xC109_raw"(
+   station        VARCHAR (20),
+   receiver       VARCHAR (10),
+   msg_time       DOUBLE PRECISION,
+   addr_from      VARCHAR (30),
+   altitude       REAL,
+   rssi_rx        SMALLINT,
+   frame_type     VARCHAR (10),
+   frame_cnt      SMALLINT,
+   frame          TEXT,
+   packet_id      INTEGER,
+   packet_num     INTEGER,
+   epoch_index    INTEGER,
+   interval_index SMALLINT,
+   gps_lat        REAL,
+   gps_lon        REAL,
+   gps_alt        REAL,
+   gps_tow        INTEGER,
+   gps_fix        SMALLINT,
+   gps_numsats    SMALLINT,
+   cw_sa_0        INTEGER,
+   cw_sa_1        INTEGER,
+   cw_sa_2        INTEGER,
+   cw_sa_3        INTEGER,
+   cw_sa_4        INTEGER,
+   cw_sa_5        INTEGER,
+   cw_sa_6        INTEGER,
+   cw_sa_7        INTEGER,
+   cw_sa_8        INTEGER,
+   hw_sa_0        INTEGER,
+   hw_sa_1        INTEGER,
+   hw_sa_2        INTEGER,
+   hw_sa_3        INTEGER,
+   hw_sa_4        INTEGER,
+   hw_sa_5        INTEGER,
+   hw_sa_6        INTEGER,
+   hw_sa_7        INTEGER,
+   hw_sa_8        INTEGER,
+   cw_meas_vr1    SMALLINT,
+   cw_meas_vr2    SMALLINT,
+   cw_meas_vo1    SMALLINT,
+   cw_meas_vo2    SMALLINT,
+   cw_meas_cpot   INTEGER,
+   cw_meas_gpot   INTEGER,
+   hw_meas_vr1    SMALLINT,
+   hw_meas_vr2    SMALLINT,
+   hw_meas_vo1    SMALLINT,
+   hw_meas_vo2    SMALLINT
+);
+```
+
 # Frontend
 -   Live data feed and visualization: [Streaming UI](https://iriss-2j50vp3tc.now.sh/#/)
 
@@ -108,6 +212,14 @@ services:
 volumes:
   db_data:
 ```
+
+note: database muri must be created in the postgres/timescale image before hasura is able to connect.
+
+### Useful Docker commands
+-  docker exec -it [img-id] psql -U postgres (connect to postgres)
+-  docker-compose start/stop
+-  docker inspect [obj]
+
 
 ### Resources 
 -   [timescale](http://64.227.104.52:8080/console)
