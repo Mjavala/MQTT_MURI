@@ -1,5 +1,5 @@
 # System Overview
-![alt text](https://raw.githubusercontent.com/Mjavala/muri/master/architecture_overview.png)
+![alt text](https://raw.githubusercontent.com/Mjavala/muri/master/system.png)
 
 # Todo:
 -   Doc - https://docs.google.com/document/d/1CSF3hZtkelVOZ4mjL_WDlLTLz2xcdvG2n6zTeEbTXk4/edit?usp=sharing
@@ -203,7 +203,7 @@ services:
     - "timescale"
     restart: always
     environment:
-      # HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:!--config--!@timescale:5432/muri
+      # HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:!--config--!@timescale:5432/postgres
       # HASURA_GRAPHQL_ACCESS_KEY: '!--- set your access key ---!'
     command:
       - graphql-engine
