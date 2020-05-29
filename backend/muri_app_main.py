@@ -16,12 +16,14 @@ import time
 import json
 from muri.backend.muri_app_mqtt import muri_app_mqtt as mqttc
 import muri.backend.muri_db as muri_db
+import muri.backend.muri_db_raw as muri_db_raw
 import muri.backend.muri_app_log as muri_app_log
 
 STAT_INTERVAL = 5
 
 mqtt_conn = mqttc()
 db = muri_db.muri_db()
+db_raw = muri_db_raw.muri_db_raw()
 
 async def main_loop(): 
 
@@ -37,9 +39,11 @@ async def main_loop():
                 if (time.time() - last_stat > STAT_INTERVAL): 
                     last_stat = time.time() 
                     stat_msg = {"mqtt": mqtt_conn.get_stats()}
+                    raw_msg = {mqtt_conn.get_raw_msg()}
 
                     # stat msg to database
                     db.msg_in(stat_msg)
+                    db_raw.msg_in(raw_msg)
 
                     logger.log_app(json.dumps(stat_msg))
                 await asyncio.sleep(0.01)

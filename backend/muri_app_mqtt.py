@@ -4,6 +4,7 @@ import time
 import asyncio
 import logging
 import muri.backend.muri_app_log as muri_app_log
+import muri.backend.raw_msg_filter as raw_msg_filter
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
@@ -37,6 +38,8 @@ class muri_app_mqtt():
         self.temp = float
         self.humidity = float
 
+        self.msg_to_db = {}
+
     def on_mqtt_conn(self, client, userdata, flags, rc):
         if rc == 0:
             self.connected = True
@@ -63,7 +66,9 @@ class muri_app_mqtt():
 
         self.message_unpack(payload)
 
-        self.db_data(payload)
+        msg = self.raw_msg_filter.msg_in(message)
+        self.msg_to_db = msg
+        #   self.db_data(payload)   - currently unsure what's going into the parsed DB
 
     def message_unpack(self, payload):
         self.id = payload['data']['ADDR_FROM']
@@ -93,10 +98,12 @@ class muri_app_mqtt():
             "temperature": self.temp,
             "humidity": self.humidity
             }
-        
+
     def get_stats(self): 
         return self.last_stats
 
+    def get_raw_msg(self):
+        return self.msg_to_db
 
     async def start_mqtt(self):
     
