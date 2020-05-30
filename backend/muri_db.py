@@ -30,8 +30,7 @@ class muri_db():
         self.logger = logging.getLogger('app')
 
     async def run(self):
-        print('here')
-        try: 
+        try:
             self.logger.log_app('--- Writing Data to Database ---')
             print(USER,PW,DATABASE,HOST)
             conn = await asyncpg.connect(user=USER, password=PW, database=DATABASE, host=HOST)
@@ -60,7 +59,6 @@ class muri_db():
         if message == {} or message == None:
             return False
         if message['humidity'] == float or message['temperature'] == float:
-            print('ICs...')
             return False
         return True
 
@@ -72,13 +70,10 @@ class muri_db():
                 if (time.time() - last_time > 5): 
                     last_time = time.time()
                     message = self.current_message.get('mqtt', None)
-                    # IC's error, float types. Need to perform check so we don't write redundant msg
+                    
                     if (self.initialConditionChecks(message)):
-                        #if message != {} and message != None:
                         self.stat_update()
                         await self.run()
-                        #if message == None or message == {}:
-                            #pass
 
                 await asyncio.sleep(0.1)
         except Exception as e:
