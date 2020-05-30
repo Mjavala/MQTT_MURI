@@ -5,6 +5,7 @@ import logging
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
+import muri_app_log as muri_app_log
 
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
@@ -19,11 +20,12 @@ class muri_db_raw():
     def __init__(self):
         self.current_message = {}
 
+        self.app_log_setup = muri_app_log.main_app_logs()
         self.logger = logging.getLogger('app')
 
     async def run_0xd2a8(self):
         try: 
-            self.logger.log_app('--- Writing Data to Raw database ---')
+            self.logger.info('--- Writing Data to Raw database ---')
             conn = await asyncpg.connect(user=USER, password=PW, database=DATABASE, host=HOST)
             query = '''
                     INSERT INTO 0xd2a8_raw VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15,
@@ -182,8 +184,8 @@ class muri_db_raw():
                             # run_0xC109
                             await self.run()
 
-                        elif key == None:
-                            self.logger.log_app('!--- RAW DB SERVICE ERROR: Undefined message type ---!')
+                    elif key == None:
+                        pass
 
                 await asyncio.sleep(0.1)
 

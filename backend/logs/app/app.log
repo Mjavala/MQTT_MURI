@@ -1,0 +1,302 @@
+2020-05-29 18:05:30,939 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:05:31,089 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:05:31,304 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:05:31,390 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:05:31,646 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:05:41,425 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:11,280 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:06:11,280 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:06:11,280 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:06:11,280 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:06:11,284 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:06:11,284 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:06:11,284 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:06:11,284 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:06:11,285 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:06:11,285 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:06:11,285 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:06:11,285 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:06:11,286 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:06:11,286 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:06:11,286 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:06:11,286 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:06:11,495 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:06:11,495 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:06:11,495 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:06:11,495 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:06:21,417 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:21,417 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:21,417 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:21,417 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:21,666 - app - app_lvl - Exception in Database Connection Script: invalid input for query argument $4: <class 'float'> (must be real number, not type)
+2020-05-29 18:06:21,666 - app - app_lvl - Exception in Database Connection Script: invalid input for query argument $4: <class 'float'> (must be real number, not type)
+2020-05-29 18:06:21,666 - app - app_lvl - Exception in Database Connection Script: invalid input for query argument $4: <class 'float'> (must be real number, not type)
+2020-05-29 18:06:21,666 - app - app_lvl - Exception in Database Connection Script: invalid input for query argument $4: <class 'float'> (must be real number, not type)
+2020-05-29 18:06:26,448 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:26,448 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:26,448 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:06:26,448 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:09:58,703 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:09:58,703 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:09:58,703 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:09:58,703 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:09:58,705 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:09:58,705 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:09:58,705 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:09:58,705 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:09:58,706 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:09:58,706 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:09:58,706 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:09:58,706 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:09:58,706 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:09:58,706 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:09:58,706 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:09:58,706 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:09:58,907 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:09:58,907 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:09:58,907 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:09:58,907 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:10:03,771 - app - app_lvl - Exception in Database Service: initialConditionChecks() missing 1 required positional argument: 'message'
+2020-05-29 18:10:03,771 - app - app_lvl - Exception in Database Service: initialConditionChecks() missing 1 required positional argument: 'message'
+2020-05-29 18:10:03,771 - app - app_lvl - Exception in Database Service: initialConditionChecks() missing 1 required positional argument: 'message'
+2020-05-29 18:10:03,771 - app - app_lvl - Exception in Database Service: initialConditionChecks() missing 1 required positional argument: 'message'
+2020-05-29 18:10:45,647 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:10:45,647 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:10:45,647 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:10:45,647 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:10:45,649 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:10:45,649 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:10:45,649 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:10:45,649 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:10:45,650 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:10:45,650 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:10:45,650 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:10:45,650 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:10:45,650 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:10:45,650 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:10:45,650 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:10:45,650 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:10:45,856 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:10:45,856 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:10:45,856 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:10:45,856 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:10:50,708 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:10:50,708 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:10:50,708 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:10:50,708 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:11:45,012 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:11:45,012 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:11:45,012 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:11:45,012 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:11:45,013 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:11:45,013 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:11:45,013 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:11:45,013 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:11:45,014 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:11:45,014 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:11:45,014 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:11:45,014 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:11:45,015 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:11:45,015 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:11:45,015 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:11:45,015 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:11:45,255 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:11:45,255 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:11:45,255 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:11:45,255 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:11:50,073 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:11:50,073 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:11:50,073 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:11:50,073 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:13:36,312 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:13:36,312 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:13:36,312 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:13:36,312 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:13:36,314 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:13:36,314 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:13:36,314 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:13:36,314 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:13:36,315 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:13:36,315 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:13:36,315 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:13:36,315 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:13:36,316 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:13:36,316 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:13:36,316 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:13:36,316 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:13:36,524 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:13:36,524 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:13:36,524 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:13:36,524 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:13:41,384 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:13:41,384 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:13:41,384 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:13:41,384 - app - app_lvl - Exception in Database Service: 'humidity'
+2020-05-29 18:14:19,963 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:19,963 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:19,963 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:19,963 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:19,964 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:19,964 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:19,964 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:19,964 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:19,965 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:19,965 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:19,965 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:19,965 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:19,966 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:19,966 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:19,966 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:19,966 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:20,177 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:20,177 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:20,177 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:20,177 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:25,021 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:14:25,021 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:14:25,021 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:14:25,021 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:14:41,919 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:41,919 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:41,919 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:41,919 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:14:41,921 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:41,921 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:41,921 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:41,921 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:14:41,922 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:41,922 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:41,922 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:41,922 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:14:41,923 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:41,923 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:41,923 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:41,923 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:14:42,123 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:42,123 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:42,123 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:42,123 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:14:46,975 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:14:46,975 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:14:46,975 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:14:46,975 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:16:49,466 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:16:49,466 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:16:49,466 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:16:49,466 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:16:49,468 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:16:49,468 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:16:49,468 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:16:49,468 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:16:49,469 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:16:49,469 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:16:49,469 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:16:49,469 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:16:49,469 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:16:49,469 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:16:49,469 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:16:49,469 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:16:49,686 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:16:49,686 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:16:49,686 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:16:49,686 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:16:54,526 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:16:54,526 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:16:54,526 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:16:54,526 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:17:26,636 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:17:26,636 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:17:26,636 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:17:26,636 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:17:26,637 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:17:26,637 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:17:26,637 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:17:26,637 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:17:26,638 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:17:26,638 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:17:26,638 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:17:26,638 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:17:26,639 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:17:26,639 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:17:26,639 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:17:26,639 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:17:26,839 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:17:26,839 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:17:26,839 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:17:26,839 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:17:31,701 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:17:31,701 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:17:31,701 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:17:31,701 - app - app_lvl - Exception in Database Service: 'mqtt'
+2020-05-29 18:18:15,260 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:18:15,260 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:18:15,260 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:18:15,260 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:18:15,261 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:18:15,261 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:18:15,261 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:18:15,261 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:18:15,262 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:18:15,262 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:18:15,262 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:18:15,262 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:18:15,263 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:18:15,263 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:18:15,263 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:18:15,263 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:18:15,468 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:18:15,468 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:18:15,468 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:18:15,468 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:18:20,324 - app - app_lvl - Exception in Database Service: name 'false' is not defined
+2020-05-29 18:18:20,324 - app - app_lvl - Exception in Database Service: name 'false' is not defined
+2020-05-29 18:18:20,324 - app - app_lvl - Exception in Database Service: name 'false' is not defined
+2020-05-29 18:18:20,324 - app - app_lvl - Exception in Database Service: name 'false' is not defined
+2020-05-29 18:19:02,350 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:02,350 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:02,350 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:02,350 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:02,352 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:02,352 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:02,352 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:02,352 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:02,353 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:02,353 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:02,353 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:02,353 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:02,354 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:02,354 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:02,354 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:02,354 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:02,562 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:19:02,562 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:19:02,562 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:19:02,562 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:19:12,484 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:12,484 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:12,484 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:12,484 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:17,568 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:17,568 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:17,568 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:17,568 - app - app_lvl - --- Writing Data to Database ---
+2020-05-29 18:19:39,306 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:39,306 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:39,306 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:39,306 - app - app_lvl - Starting MURI App Main Program
+2020-05-29 18:19:39,307 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:39,307 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:39,307 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:39,307 - app - app_lvl - Connecting to MQTT Server....
+2020-05-29 18:19:39,308 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:39,308 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:39,308 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:39,308 - app - app_lvl - --- Database service started succesfully ---
+2020-05-29 18:19:39,309 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:39,309 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:39,309 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:39,309 - app - app_lvl - --- Raw database service started succesfully ---
+2020-05-29 18:19:39,537 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:19:39,537 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:19:39,537 - app - app_lvl - --- MQTT Connected! ---
+2020-05-29 18:19:39,537 - app - app_lvl - --- MQTT Connected! ---

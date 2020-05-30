@@ -7,18 +7,15 @@ import sys
 
 def device_logger(device_list, id, message):
     #if the device is streaming and there is no logger created
-    print(device_list)
-    print(logging.root.manager.loggerDict)
     for i in device_list:
         if id in device_list and id not in logging.root.manager.loggerDict:
             #create a logger
             logger = device_log_setup(id)
-            logger.info(message)
+            # logger.info(message)
         elif id in device_list and id in logging.root.manager.loggerDict:
             #logger exists
             logger = logging.getLogger(id)
-            print('logging data for: ' + id)
-            logger.info(message)
+            #   logger.info(message)
         elif id not in device_list:
             raise
 
@@ -79,7 +76,7 @@ def main_app_logs():
     logger = logging.getLogger('app')
     logging.Logger.log_app = log_app
     logging.basicConfig(level=logging.INFO+1, format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s', filemode='a')
-    log_file = "logs/app/dgrs.log".format()
+    log_file = "logs/app/app.log".format()
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
     file_handler = logging.handlers.TimedRotatingFileHandler(log_file,when="h",backupCount=24)    

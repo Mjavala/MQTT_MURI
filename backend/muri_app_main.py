@@ -14,14 +14,14 @@ import logging
 import logging.handlers as handlers
 import time
 import json
-from muri.backend.muri_app_mqtt import muri_app_mqtt as mqttc
-import muri.backend.muri_db as muri_db
-import muri.backend.muri_db_raw as muri_db_raw
-import muri.backend.muri_app_log as muri_app_log
+import muri_app_mqtt as mqttc
+import muri_db as muri_db
+import muri_db_raw as muri_db_raw
+import muri_app_log as muri_app_log
 
 STAT_INTERVAL = 5
 
-mqtt_conn = mqttc()
+mqtt_conn = mqttc.muri_app_mqtt()
 db = muri_db.muri_db()
 db_raw = muri_db_raw.muri_db_raw()
 
@@ -30,28 +30,23 @@ async def main_loop():
     last_stat = time.time()
     logger = logging.getLogger('app')
 
-    try: 
+    while (True):
 
-        while (True):
-           
-            if (mqtt_conn.isConnected() == True): 
+        try: 
 
-                if (time.time() - last_stat > STAT_INTERVAL): 
-                    last_stat = time.time() 
-                    stat_msg = {"mqtt": mqtt_conn.get_stats()}
-                    raw_msg = {mqtt_conn.get_raw_msg()}
+            if (time.time() - last_stat > STAT_INTERVAL): 
+                last_stat = time.time() 
+                stat_msg = {"mqtt": mqtt_conn.get_stats()}
+                #raw_msg = {mqtt_conn.get_raw_msg()}
+                # stat msg to database
+                db.msg_in(stat_msg)
+                #db_raw.msg_in(raw_msg)
 
-                    # stat msg to database
-                    db.msg_in(stat_msg)
-                    db_raw.msg_in(raw_msg)
-
-                    logger.log_app(json.dumps(stat_msg))
-                await asyncio.sleep(0.01)
-
-
-    except Exception as e: 
-        print(e)
-        logger.log_app("Main Loop Exception: %s" % e)
+                #logger.log_app(json.dumps(stat_msg))
+            await asyncio.sleep(0.01)
+        
+        except Exception as e: 
+            logger.log_app("Main Loop Exception: %s" % e)
 
 
 
@@ -66,6 +61,7 @@ if __name__ == '__main__':
 
     tasks = [asyncio.ensure_future(main_loop()),
              asyncio.ensure_future(mqtt_conn.main_loop()),
-             asyncio.ensure_future(db.main_loop())]
+             asyncio.ensure_future(db.main_loop()),
+             asyncio.ensure_future(db_raw.main_loop())]
 
     loop.run_until_complete(asyncio.gather(*tasks))

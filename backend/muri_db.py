@@ -5,6 +5,7 @@ import logging
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
+import muri_app_log as muri_app_log
 
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
@@ -25,11 +26,14 @@ class muri_db():
         self.temp = float
         self.hum = float 
 
+        self.app_log_setup = muri_app_log.main_app_logs()
         self.logger = logging.getLogger('app')
 
     async def run(self):
+        print('here')
         try: 
             self.logger.log_app('--- Writing Data to Database ---')
+            print(USER,PW,DATABASE,HOST)
             conn = await asyncpg.connect(user=USER, password=PW, database=DATABASE, host=HOST)
             await conn.execute(
                 '''
@@ -42,6 +46,7 @@ class muri_db():
 
     def msg_in(self, payload):
         self.current_message = payload
+        print(self.current_message)
 
 
     def stat_update(self):
@@ -51,6 +56,14 @@ class muri_db():
         self.temp = self.current_message['mqtt']['temperature']
         self.hum = self.current_message['mqtt']['humidity']
 
+    def initialConditionChecks(self, message):
+        if message == {} or message == None:
+            return False
+        if message['humidity'] == float or message['temperature'] == float:
+            print('ICs...')
+            return False
+        return True
+
     async def main_loop(self):
         last_time = time.time()
         self.logger.log_app('--- Database service started succesfully ---')
@@ -58,13 +71,18 @@ class muri_db():
             while(True):
                 if (time.time() - last_time > 5): 
                     last_time = time.time()
-                    if self.current_message['mqtt'] != {}:
+                    message = self.current_message.get('mqtt', None)
+                    # IC's error, float types. Need to perform check so we don't write redundant msg
+                    if (self.initialConditionChecks(message)):
+                        #if message != {} and message != None:
                         self.stat_update()
                         await self.run()
+                        #if message == None or message == {}:
+                            #pass
 
                 await asyncio.sleep(0.1)
         except Exception as e:
-            self.logger.log_app.log_app("Exception in Database Service: %s" % e)
+            self.logger.log_app("Exception in Database Service: %s" % e)
 
 
 if __name__ == "__main__":
