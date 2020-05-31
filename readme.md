@@ -8,6 +8,11 @@
 -   Data ingestion as a service
 -   Testing
 
+### Useful Docker commands
+-  docker exec -it [img-id] psql -U postgres (connect to postgres)
+-  docker-compose start/stop
+-  docker inspect [obj]
+
 # DB schema
 
 ###   2 relational tables - devices, stations - ||  One time-series hypertable -  device_data
