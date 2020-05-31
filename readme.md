@@ -34,9 +34,6 @@ linked to our timescaledb.
 ## Data ingestion
 -   Currently a 1-1 connection between an instance of this service and a single database.
 
-### Resources
--   [Asyncpg](https://github.com/MagicStack/asyncpg)
-
 # Database - DO droplet debian (v10.4)
 
 ## Backend UI 
@@ -89,3 +86,4 @@ note: database muri must be created in the postgres/timescale image before hasur
 ### Resources 
 -   [timescale](http://64.227.104.52:8080/console)
 -   [hasura](https://hasura.io/docs/1.0/graphql/manual/index.html)
+-   [Asyncpg](https://github.com/MagicStack/asyncpg)
