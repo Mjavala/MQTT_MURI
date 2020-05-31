@@ -3,37 +3,6 @@
 
 # Todo:
 -   Doc - https://docs.google.com/document/d/1CSF3hZtkelVOZ4mjL_WDlLTLz2xcdvG2n6zTeEbTXk4/edit?usp=sharing
--   Historical data ui
--   Security config
--   Replication
--   System log files
--   Raw database instance
--   Data ingestion as a service
--   Testing
-
-# Proposed DB schema
-
-###   2 relational tables - devices, stations - ||  One time-series hypertable -  device_data
-```SQL
-CREATE TABLE "devices"(
-   device_id   VARCHAR (30),
-);
-
-CREATE TABLE "stations"(
-   station_id   VARCHAR (30),
-);
-
-CREATE TABLE "device_data"(
-   time            TIMESTAMP WITH TIME ZONE,
-   altitude        REAL,
-   rssi            SMALLINT,
-   temperature     REAL,
-   humidity        REAL,
-   device_id       VARCHAR (30),
-   station_id      VARCHAR (30)
-);
-
-```
 
 # Frontend
 -   Live data feed and visualization: [Streaming UI](https://iriss-2j50vp3tc.now.sh/#/)
