@@ -34,8 +34,6 @@ linked to our timescaledb.
 ## Data ingestion
 -   Currently a 1-1 connection between an instance of this service and a single database.
 
-# Database - DO droplet debian (v10.4)
-
 ## Backend UI 
 The current set up is for communication with the frontend via the [Hasura GraphQL API](http://64.227.104.52:8080/console).
 
@@ -74,14 +72,6 @@ services:
 volumes:
   db_data:
 ```
-
-note: database muri must be created in the postgres/timescale image before hasura is able to connect.
-
-### Useful Docker commands
--  docker exec -it [img-id] psql -U postgres (connect to postgres)
--  docker-compose start/stop
--  docker inspect [obj]
-
 
 ### Resources 
 -   [timescale](http://64.227.104.52:8080/console)
