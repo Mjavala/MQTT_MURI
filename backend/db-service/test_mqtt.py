@@ -1,3 +1,8 @@
+# MQTT test
+# Program Description: 
+#   - Simulated message publishing on irisslive MQTT broker
+#   - Subscribe / Publish only to RAW message channel
+
 import paho.mqtt.client as mosquitto
 import sys
 import os
@@ -117,14 +122,10 @@ class MQTT_SAMPLE_NODE():
     def on_message(self, client,  userdata, message):
         print(str(message.payload.decode()))
 
-    def on_disconnect(client, userdata, rc):
+    def on_disconnect(self, client, userdata, rc):
         if rc != 0:
             self.connected = False
             print("Unexpected disconnection.")
-    
-    def on_subscribe(client, userdata, mid, granted_qos):
-        pass
-
     
     def publish_message_wrap(self, channel, message_func):
         self.mqttc.publish(channel, str(json.dumps(message_func)), qos = 2)
