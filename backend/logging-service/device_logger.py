@@ -11,11 +11,11 @@ def device_logger(device_list, id, message):
         if id in device_list and id not in logging.root.manager.loggerDict:
             #create a logger
             logger = device_log_setup(id)
-            # logger.info(message)
+            logger.info(message)
         elif id in device_list and id in logging.root.manager.loggerDict:
             #logger exists
             logger = logging.getLogger(id)
-            #   logger.info(message)
+            logger.info(message)
         elif id not in device_list:
             raise
 
@@ -45,8 +45,8 @@ def device_log_setup(id):
 def build_dir(id):
     
     # config to your directory structure
-    path_hourly = '/home/muri-app/backend/logs/{0}/hourly/'.format(id)
-    path_daily = '/home/muri-app/backend/logs/{0}/daily/'.format(id)
+    path_hourly = './logs/{0}/hourly/'.format(id)
+    path_daily = './logs/{0}/daily/'.format(id)
 
     try:
         os.makedirs(path_hourly, mode=0o777, exist_ok=True)

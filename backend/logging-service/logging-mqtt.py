@@ -2,7 +2,7 @@ import paho.mqtt.client as mosquitto
 import json
 import time
 import asyncio
-import muri.backend.muri_app_log as muri_app_log
+import device_logger
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
@@ -13,7 +13,7 @@ load_dotenv(dotenv_path)
 MQTT_USER = os.getenv('MQTT_USER')
 MQTT_PASS = os.getenv('MQTT_PASS')
 MQTT_HOST = os.getenv('MQTT_HOST')
-MQTT_PORT = os.getenv('MQTT_PORT')
+MQTT_PORT = 8883
 
 class muri_app_mqtt():
 
@@ -57,17 +57,17 @@ class muri_app_mqtt():
             self.connected = False
 
     def on_mqtt_msg(self, client,  userdata, message):
-        
+        print("!!! MQTT Message Received !!!")
         payload = json.loads(str(message.payload.decode()))
 
-        muri_app_log.device_logger(self.id_set, self.id, payload)
+        self.message_unpack(payload)
 
 
     def message_unpack(self, payload):
         self.id = payload['data']['ADDR_FROM']
         self.id_set.add(self.id)
 
-        muri_app_log.device_logger(self.id_set, self.id, payload)
+        device_logger.device_logger(self.id_set, self.id, payload)
 
 
     def isConnected(self): 
