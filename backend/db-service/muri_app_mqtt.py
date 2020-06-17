@@ -59,17 +59,9 @@ class muri_app_mqtt():
         
         payload = json.loads(str(message.payload.decode()))
 
-        self.message_unpack(payload)
-
         self.msg_to_db_raw = payload
 
-        self.db_data(payload)   # - currently unsure what's going into the parsed DB
-
-    def message_unpack(self, payload):
-        self.id = payload['data']['ADDR_FROM']
-        self.id_set.add(self.id)
-
-        muri_app_log.device_logger(self.id_set, self.id, payload)
+        # self.db_data(payload)   # - currently unsure what's going into the parsed DB
 
     def db_data(self, payload):
         self.altitude = payload['data']['frame_data']['gps_alt']

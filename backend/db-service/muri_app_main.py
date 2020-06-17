@@ -52,6 +52,7 @@ async def main_loop():
 
 if __name__ == '__main__':
     muri_app_log.main_app_logs()
+    muri_app_log.db_logs()
     logger = logging.getLogger('app')
 
 

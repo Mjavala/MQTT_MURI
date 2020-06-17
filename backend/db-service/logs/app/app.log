@@ -1,593 +1,211 @@
-2020-06-01 05:45:42,663 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:45:42,845 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:45:43,091 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:45:43,224 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:45:43,361 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:45:46,342 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:45:46,342 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:45:46,342 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:45:46,342 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:45:46,344 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:45:46,344 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:45:46,344 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:45:46,344 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:45:46,350 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:45:46,350 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:45:46,350 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:45:46,350 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:45:46,351 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:45:46,351 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:45:46,351 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:45:46,351 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:45:46,574 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:45:46,574 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:45:46,574 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:45:46,574 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:45:51,414 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:51,414 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:51,414 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:51,414 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:51,745 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:45:51,745 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:45:51,745 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:45:51,745 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:45:56,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:56,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:56,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:56,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:45:56,705 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:45:56,705 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:45:56,705 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:45:56,705 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:01,488 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:01,488 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:01,488 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:01,488 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:02,531 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:02,531 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:02,531 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:02,531 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:06,563 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:06,563 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:06,563 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:06,563 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:06,798 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:06,798 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:06,798 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:06,798 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:11,846 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:11,846 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:11,846 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:11,846 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:16,633 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:16,633 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:16,633 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:16,633 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:46:16,909 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:16,909 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:16,909 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:46:16,909 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:03,292 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:47:03,292 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:47:03,292 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:47:03,292 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:47:03,294 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:47:03,294 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:47:03,294 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:47:03,294 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:47:03,295 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:47:03,295 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:47:03,295 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:47:03,295 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:47:03,296 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:47:03,296 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:47:03,296 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:47:03,296 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:47:04,046 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:47:04,046 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:47:04,046 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:47:04,046 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:47:08,597 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:08,597 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:08,597 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:08,597 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: the server expects 43 arguments for this query, 44 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:13,374 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:13,374 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:13,374 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:13,374 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:13,618 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:13,618 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:13,618 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:13,618 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:18,392 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:18,392 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:18,392 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:18,392 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:47:18,628 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:18,628 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:18,628 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:47:18,628 - app - app_lvl - Exception in Database (0xc109) Connection Script: the server expects 45 arguments for this query, 46 were passed
-HINT:  Check the query against the passed list of arguments.
-2020-06-01 05:52:33,260 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:52:33,260 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:52:33,260 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:52:33,260 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:52:33,261 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:52:33,261 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:52:33,261 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:52:33,261 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:52:33,263 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:52:33,263 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:52:33,263 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:52:33,263 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:52:33,263 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:52:33,263 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:52:33,263 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:52:33,263 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:52:33,837 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:52:33,837 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:52:33,837 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:52:33,837 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:52:38,315 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:38,315 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:38,315 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:38,315 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:38,561 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:38,561 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:38,561 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:38,561 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:43,347 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:43,347 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:43,347 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:43,347 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:44,009 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:44,009 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:44,009 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:44,009 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:48,409 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:48,409 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:48,409 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:48,409 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:48,647 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:48,647 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:48,647 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:48,647 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:53,422 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:53,422 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:53,422 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:53,422 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:53,659 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:53,659 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:53,659 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:53,659 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:58,437 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:58,437 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:58,437 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:58,437 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:52:58,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:58,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:58,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:52:58,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:04,033 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:04,033 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:04,033 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:04,033 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:08,535 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:53:08,535 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:53:08,535 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:53:08,535 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:53:08,786 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:08,786 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:08,786 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:53:08,786 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:39,051 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:59:39,051 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:59:39,051 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:59:39,051 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 05:59:39,053 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:59:39,053 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:59:39,053 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:59:39,053 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 05:59:39,054 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:59:39,054 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:59:39,054 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:59:39,054 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 05:59:39,055 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:59:39,055 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:59:39,055 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:59:39,055 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 05:59:39,717 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:59:39,717 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:59:39,717 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:59:39,717 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 05:59:44,363 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:44,363 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:44,363 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:44,363 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:49,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:49,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:49,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:49,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:49,655 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:49,655 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:49,655 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:49,655 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:54,163 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:54,163 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:54,163 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:54,163 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 05:59:54,408 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:54,408 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:54,408 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 05:59:54,408 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:49,116 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:08:49,116 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:08:49,116 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:08:49,116 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:08:49,117 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:08:49,117 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:08:49,117 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:08:49,117 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:08:49,118 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:08:49,118 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:08:49,118 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:08:49,118 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:08:49,119 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:08:49,119 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:08:49,119 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:08:49,119 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:08:49,331 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:08:49,331 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:08:49,331 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:08:49,331 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:08:54,172 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:54,172 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:54,172 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:54,172 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:55,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:55,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:55,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:55,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:59,236 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:59,236 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:59,236 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:59,236 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:08:59,480 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:59,480 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:59,480 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:08:59,480 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:04,259 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:04,259 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:04,259 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:04,259 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:05,776 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:05,776 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:05,776 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:05,776 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:09,331 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:09,331 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:09,331 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:09,331 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:09,578 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:09,578 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:09,578 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:09,578 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:14,366 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:14,366 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:14,366 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:14,366 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:14,598 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:14,598 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:14,598 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:14,598 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:19,377 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:19,377 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:19,377 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:19,377 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:19,613 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:19,613 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:19,613 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:19,613 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:25,571 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:09:25,571 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:09:25,571 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:09:25,571 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:09:29,407 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:29,407 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:29,407 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:29,407 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:09:29,638 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:29,638 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:29,638 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:09:29,638 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:19:02,492 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:19:02,492 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:19:02,492 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:19:02,492 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:19:02,494 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:19:02,494 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:19:02,494 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:19:02,494 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:19:02,495 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:19:02,495 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:19:02,495 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:19:02,495 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:19:02,496 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:19:02,496 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:19:02,496 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:19:02,496 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:19:02,701 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:19:02,701 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:19:02,701 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:19:02,701 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:19:07,836 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:19:07,836 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:19:07,836 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:19:07,836 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more expressions than target columns
-2020-06-01 06:19:12,617 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:19:12,617 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:19:12,617 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:19:12,617 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:19:12,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:19:12,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:19:12,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:19:12,865 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:34,417 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:25:34,417 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:25:34,417 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:25:34,417 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:25:34,418 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:25:34,418 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:25:34,418 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:25:34,418 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:25:34,419 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:25:34,419 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:25:34,419 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:25:34,419 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:25:34,420 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:25:34,420 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:25:34,420 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:25:34,420 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:25:34,623 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:25:34,623 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:25:34,623 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:25:34,623 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:25:39,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:39,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:39,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:39,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:39,714 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:39,714 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:39,714 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:39,714 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:44,492 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:44,492 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:44,492 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:44,492 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:45,468 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:45,468 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:45,468 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:45,468 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:49,501 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:49,501 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:49,501 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:49,501 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:49,844 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:49,844 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:49,844 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:49,844 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:54,540 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:54,540 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:54,540 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:54,540 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:25:55,055 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:55,055 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:55,055 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:55,055 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:25:59,939 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:25:59,939 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:25:59,939 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:25:59,939 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:26:04,631 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:26:04,631 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:26:04,631 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:26:04,631 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:43,948 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:27:43,948 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:27:43,948 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:27:43,948 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:27:43,950 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:27:43,950 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:27:43,950 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:27:43,950 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:27:43,951 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:27:43,951 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:27:43,951 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:27:43,951 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:27:43,952 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:27:43,952 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:27:43,952 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:27:43,952 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:27:44,166 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:27:44,166 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:27:44,166 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:27:44,166 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:27:49,020 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:49,020 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:49,020 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:49,020 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:50,056 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:27:50,056 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:27:50,056 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:27:50,056 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:27:54,646 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:27:54,646 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:27:54,646 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:27:54,646 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 06:27:59,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:59,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:59,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:59,146 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:27:59,382 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:27:59,382 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:27:59,382 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:27:59,382 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:11,278 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:52:11,278 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:52:11,278 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:52:11,278 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 06:52:11,280 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:52:11,280 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:52:11,280 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:52:11,280 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 06:52:11,281 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:52:11,281 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:52:11,281 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:52:11,281 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 06:52:11,282 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:52:11,282 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:52:11,282 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:52:11,282 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 06:52:11,600 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:52:11,600 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:52:11,600 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:52:11,600 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 06:52:21,396 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:21,396 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:21,396 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:21,396 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:21,642 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:21,642 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:21,642 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:21,642 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:26,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:26,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:26,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:26,429 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:26,724 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:26,724 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:26,724 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:26,724 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:36,553 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:36,553 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:36,553 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:36,553 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 06:52:36,875 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:36,875 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:36,875 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 06:52:36,875 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:20,357 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 07:05:20,357 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 07:05:20,357 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 07:05:20,357 - app - app_lvl - Starting MURI App Main Program
-2020-06-01 07:05:20,358 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 07:05:20,358 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 07:05:20,358 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 07:05:20,358 - app - app_lvl - Connecting to MQTT Server....
-2020-06-01 07:05:20,359 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 07:05:20,359 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 07:05:20,359 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 07:05:20,359 - app - app_lvl - --- Database service started succesfully ---
-2020-06-01 07:05:20,360 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 07:05:20,360 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 07:05:20,360 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 07:05:20,360 - app - app_lvl - --- Raw database service started succesfully ---
-2020-06-01 07:05:20,563 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 07:05:20,563 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 07:05:20,563 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 07:05:20,563 - app - app_lvl - --- MQTT Connected! ---
-2020-06-01 07:05:25,427 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:25,427 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:25,427 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:25,427 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:25,668 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:25,668 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:25,668 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:25,668 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:30,439 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:30,439 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:30,439 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:30,439 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:30,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:30,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:30,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:30,675 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:35,462 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:35,462 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:35,462 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:35,462 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:35,701 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:35,701 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:35,701 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:35,701 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:40,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:40,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:40,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:40,484 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:40,722 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:40,722 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:40,722 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:40,722 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:45,508 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:45,508 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:45,508 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:45,508 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:45,804 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:45,804 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:45,804 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:45,804 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:50,583 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:50,583 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:50,583 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:50,583 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:50,833 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:50,833 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:50,833 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:50,833 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:55,614 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:55,614 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:55,614 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:55,614 - app - app_lvl - --- Writing Data to Raw database (0xc109) ---
-2020-06-01 07:05:56,852 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:56,852 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:56,852 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:05:56,852 - app - app_lvl - Exception in Database (0xc109) Connection Script: invalid input for query argument $1: 'TEST_01' (an integer is required (got type str))
-2020-06-01 07:06:01,029 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 07:06:01,029 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 07:06:01,029 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
-2020-06-01 07:06:01,029 - app - app_lvl - Exception in Database (0xd2a8) Connection Script: INSERT has more target columns than expressions
+2020-06-04 11:18:04,273 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:18:04,344 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:18:04,480 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:18:04,587 - app - app_lvl - --- Raw database service started succesfully ---
+2020-06-04 11:18:04,682 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:18:09,354 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:09,643 - app - app_lvl - Exception in raw database service: 'muri_db_raw' object has no attribute 'message_type'
+2020-06-04 11:18:38,364 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:18:38,364 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:18:38,364 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:18:38,364 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:18:38,368 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:18:38,368 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:18:38,368 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:18:38,368 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:18:38,370 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:18:38,370 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:18:38,370 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:18:38,370 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:18:38,370 - app - app_lvl - --- Raw database service started succesfully ---
+2020-06-04 11:18:38,370 - app - app_lvl - --- Raw database service started succesfully ---
+2020-06-04 11:18:38,370 - app - app_lvl - --- Raw database service started succesfully ---
+2020-06-04 11:18:38,370 - app - app_lvl - --- Raw database service started succesfully ---
+2020-06-04 11:18:38,570 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:18:38,570 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:18:38,570 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:18:38,570 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:18:43,379 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:43,379 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:43,379 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:43,379 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:43,433 - app - app_lvl - Exception in raw database service: 'muri_db_raw' object has no attribute 'message_type'
+2020-06-04 11:18:43,433 - app - app_lvl - Exception in raw database service: 'muri_db_raw' object has no attribute 'message_type'
+2020-06-04 11:18:43,433 - app - app_lvl - Exception in raw database service: 'muri_db_raw' object has no attribute 'message_type'
+2020-06-04 11:18:43,433 - app - app_lvl - Exception in raw database service: 'muri_db_raw' object has no attribute 'message_type'
+2020-06-04 11:18:48,388 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:48,388 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:48,388 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:48,388 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:53,394 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:53,394 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:53,394 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:18:53,394 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:00,066 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:00,066 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:00,066 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:00,066 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:00,067 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:00,067 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:00,067 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:00,067 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:00,068 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:00,068 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:00,068 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:00,068 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:00,272 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:00,272 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:00,272 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:00,272 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:05,072 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:05,072 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:05,072 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:05,072 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:52,700 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:52,700 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:52,700 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:52,700 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:21:52,701 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:52,701 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:52,701 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:52,701 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:21:52,702 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:52,702 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:52,702 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:52,702 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:21:52,929 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:52,929 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:52,929 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:52,929 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:21:57,703 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:57,703 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:57,703 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:21:57,703 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:17,524 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:22:17,524 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:22:17,524 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:22:17,524 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:22:17,526 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:22:17,526 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:22:17,526 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:22:17,526 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:22:17,527 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:22:17,527 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:22:17,527 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:22:17,527 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:22:17,730 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:22:17,730 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:22:17,730 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:22:17,730 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:22:22,528 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:22,528 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:22,528 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:22,528 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:27,532 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:27,532 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:27,532 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:27,532 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:32,533 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:32,533 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:32,533 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:22:32,533 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:23:34,663 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:23:34,663 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:23:34,663 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:23:34,663 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:23:34,664 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:23:34,664 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:23:34,664 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:23:34,664 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:23:34,665 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:23:34,665 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:23:34,665 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:23:34,665 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:23:34,864 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:23:34,864 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:23:34,864 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:23:34,864 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:23:39,665 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:23:39,665 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:23:39,665 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:23:39,665 - app - app_lvl - Main Loop Exception: 'data'
+2020-06-04 11:26:06,763 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:06,763 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:06,763 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:06,763 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:06,764 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:06,764 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:06,764 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:06,764 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:06,765 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:06,765 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:06,765 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:06,765 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:06,967 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:26:06,967 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:26:06,967 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:26:06,967 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:26:23,363 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:23,363 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:23,363 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:23,363 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:26:23,364 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:23,364 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:23,364 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:23,364 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:26:23,365 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:23,365 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:23,365 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:23,365 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:26:23,565 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:26:23,565 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:26:23,565 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:26:23,565 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:27:19,687 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:27:19,687 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:27:19,687 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:27:19,687 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:27:19,688 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:27:19,688 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:27:19,688 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:27:19,688 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:27:19,689 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:27:19,689 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:27:19,689 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:27:19,689 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:27:19,895 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:27:19,895 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:27:19,895 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:27:19,895 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:31:40,531 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:31:40,531 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:31:40,531 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:31:40,531 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:31:40,533 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:31:40,533 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:31:40,533 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:31:40,533 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:31:40,534 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:31:40,534 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:31:40,534 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:31:40,534 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:31:40,744 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:31:40,744 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:31:40,744 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:31:40,744 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:32:07,888 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:32:07,888 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:32:07,888 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:32:07,888 - app - app_lvl - Starting MURI App Main Program
+2020-06-04 11:32:07,889 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:32:07,889 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:32:07,889 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:32:07,889 - app - app_lvl - Connecting to MQTT Server....
+2020-06-04 11:32:07,890 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:32:07,890 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:32:07,890 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:32:07,890 - app - app_lvl - --- Database service started succesfully ---
+2020-06-04 11:32:08,096 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:32:08,096 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:32:08,096 - app - app_lvl - --- MQTT Connected! ---
+2020-06-04 11:32:08,096 - app - app_lvl - --- MQTT Connected! ---

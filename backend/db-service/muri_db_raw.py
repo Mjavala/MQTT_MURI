@@ -19,9 +19,10 @@ HOST = os.getenv('DB_HOST_RAW')
 class muri_db_raw():
     def __init__(self):
         self.current_message = {}
+        self.message_type = str
 
         self.app_log_setup = muri_app_log.main_app_logs()
-        self.logger = logging.getLogger('app')
+        self.logger = logging.getLogger('db')
 
     async def run_0xd2a8(self):
         try: 
@@ -94,7 +95,9 @@ class muri_db_raw():
             self.logger.log_app('--- Writing Data to Raw database (0xc109) ---')
             conn = await asyncpg.connect(user=USER, password=PW, database=DATABASE, host=HOST)
             query = '''
-                        INSERT INTO "0xC109_raw" VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15,
+                        INSERT INTO "0xC109_raw" (
+                            
+                        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15,
                     $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30,
                     $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46)
                     '''
