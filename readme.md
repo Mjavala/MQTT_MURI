@@ -36,10 +36,10 @@ CREATE TABLE "device_data"(
    LATITUDE        DOUBLE NOT NULL,
    LONGITUDE       DOUBLE NOT NULL,
    ALTITUDE        DOUBLE NOT NULL,
-   RSSI            SMALLINT,
-   TEMPERATURE     REAL,
-   BATT_MON        REAL,
-   VENT_BATT       VARCHAR (30),
+   RSSI            INT,
+   TEMPERATURE     DOUBLE,
+   BATT_MON        DOUBLE,
+   VENT_BATT       DOUBLE,
 );
 
 CREATE TABLE "0xd2a8_raw"(
