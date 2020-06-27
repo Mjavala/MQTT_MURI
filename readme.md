@@ -17,22 +17,29 @@
 
 ###   2 relational tables - devices, stations - ||  One time-series hypertable -  device_data
 ```SQL
-CREATE TABLE "devices"(
-   device_id   VARCHAR (30),
+CREATE TABLE "DEVICES"(
+  ID SERIAL NOT NULL PRIMARY KEY,
+  ADDR VARCHAR(4000) NOT NULL UNIQUE
 );
 
-CREATE TABLE "stations"(
-   station_id   VARCHAR (30),
+CREATE TABLE "STATIONS"(
+  STAT_ID      SERIAL NOT NULL PRIMARY KEY,
+  STAT_ADDR    VARCHAR(4000) NOT NULL UNIQUE
 );
 
 CREATE TABLE "device_data"(
-   time            TIMESTAMP WITH TIME ZONE,
-   altitude        REAL,
-   rssi            SMALLINT,
-   temperature     REAL,
-   humidity        REAL,
-   device_id       VARCHAR (30),
-   station_id      VARCHAR (30)
+   TIMESTAMP       VARCHAR (1000) NOT NULL,
+   DEVICE_ID       SERIAL NOT NULL,
+   STATION_ID      SERIAL NOT NULL,
+   FOREIGN KEY     (DEVICE_ID) REFERENCES DEVICES(ID),
+   FOREIGN KEY     (STATION_ID) REFERENCES STATIONS(STAT_ID),
+   LATITUDE        DOUBLE NOT NULL,
+   LONGITUDE       DOUBLE NOT NULL,
+   ALTITUDE        DOUBLE NOT NULL,
+   RSSI            SMALLINT,
+   TEMPERATURE     REAL,
+   BATT_MON        REAL,
+   VENT_BATT       VARCHAR (30),
 );
 
 CREATE TABLE "0xd2a8_raw"(
